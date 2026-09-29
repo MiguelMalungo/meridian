@@ -1061,20 +1061,25 @@
         "prompt": "Cinematic aerial establishing shot of Malé, Maldives: overwater villas above a turquoise atoll. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
         "createdAt": "2026-09-29T15:37:53.537Z"
       }
+    },
+    "MAD": {
+      "image": {
+        "file": "media/MAD-image-3c5fbe1a.jpg",
+        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/2f3d9727-6f07-4c35-85b8-e51af954373d.png",
+        "requestId": "3c5fbe1a-c45a-451d-9d38-313a662678bd",
+        "prompt": "Cinematic aerial establishing shot of Madrid, Spain: Gran Vía domes and Plaza Mayor. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
+        "createdAt": "2026-09-29T15:41:11.833Z"
+      }
+    },
+    "BCN": {
+      "image": {
+        "file": "media/BCN-image-491a25de.jpg",
+        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/26cdc440-58db-4ff9-8e85-00c5423d7b76.png",
+        "requestId": "491a25de-6be4-43e0-8f22-d5a210950f6c",
+        "prompt": "Cinematic aerial establishing shot of Barcelona, Spain: Sagrada Família spires and the Eixample grid. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
+        "createdAt": "2026-09-29T15:52:04.299Z"
+      }
     }
   },
-  "jobs": {
-    "3c5fbe1a-c45a-451d-9d38-313a662678bd": {
-      "cityId": "MAD",
-      "kind": "image",
-      "prompt": "Cinematic aerial establishing shot of Madrid, Spain: Gran Vía domes and Plaza Mayor. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-      "createdAt": "2026-09-29T15:37:58.143Z"
-    },
-    "491a25de-6be4-43e0-8f22-d5a210950f6c": {
-      "cityId": "BCN",
-      "kind": "image",
-      "prompt": "Cinematic aerial establishing shot of Barcelona, Spain: Sagrada Família spires and the Eixample grid. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-      "createdAt": "2026-09-29T15:37:58.172Z"
-    }
-  }
+  "jobs": {}
 }
