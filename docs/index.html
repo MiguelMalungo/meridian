@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#06050d">
+  <title>Meridian Flight Atlas</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='%2306050d' stroke='%23f4ede2' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23ffb55e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/meridian.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/",
+        "d3-geo": "https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/+esm",
+        "topojson-client": "https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/+esm"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="scene" aria-label="Globe of destinations. Drag to turn it, scroll to zoom, click a light to open a destination."></canvas>
+  <div class="scrim" aria-hidden="true"></div>
+  <div id="labels" aria-hidden="true"></div>
+  <div id="hover-ring" aria-hidden="true"><span></span></div>
+  <div id="reticle" aria-hidden="true">
+    <div class="ring"></div>
+    <i class="br a"></i><i class="br b"></i><i class="br c"></i><i class="br d"></i>
+    <span class="coord" id="reticle-coord"></span>
+  </div>
+  <svg id="leader" class="off" aria-hidden="true"><path d=""/></svg>
+
+  <header class="masthead">
+    <div class="wordmark">MERIDIAN</div>
+    <p class="tagline" id="tagline">Flight atlas</p>
+    <div class="departing">
+      <span class="k">Departing</span>
+      <label class="home" title="Change home airport">
+        <span id="home-code">---</span><i>▾</i>
+        <select id="home-select" aria-label="Home base"></select>
+      </label>
+      <button class="back" id="btn-back" type="button">← Atlas</button>
+    </div>
+  </header>
+
+  <div class="status">
+    <span class="sun" id="sun-line"></span>
+    <span><i class="dot" id="hf-dot"></i><span class="hf-text">Higgsfield</span></span>
+    <button class="sfx" id="btn-sfx" type="button" aria-pressed="false">Sound off</button>
+  </div>
+
+  <div class="stage-spacer" aria-hidden="true"></div>
+
+  <section class="atlas" aria-label="Destinations">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-manifest" aria-selected="true" type="button">Your manifest<b id="count-manifest">0</b></button>
+      <button class="tab" role="tab" id="tab-explore" aria-selected="false" type="button">Explore<b id="count-explore">0</b></button>
+    </div>
+    <p class="atlas-sub" id="atlas-sub"></p>
+    <input class="search" id="search" type="search" placeholder="Search destinations…" autocomplete="off" hidden>
+    <ol class="rows" id="rows"></ol>
+    <div class="atlas-foot">
+      <span id="foot-note"></span>
+      <span class="foot-actions">
+        <button class="link-btn quiet" id="btn-batch" type="button" hidden></button>
+        <button class="link-btn" id="btn-add" type="button">+ Add trip</button>
+      </span>
+    </div>
+  </section>
+
+  <aside class="detail" id="detail" hidden aria-live="polite">
+    <div class="d-kicker"><i id="kicker-dot"></i><span id="d-kicker"></span></div>
+    <h1 class="d-name" id="d-name"></h1>
+    <div class="d-line" id="d-line"></div>
+    <p class="d-blurb" id="d-blurb"></p>
+    <div>
+      <figure class="d-figure" id="d-figure" data-state="loading">
+        <div class="shimmer"></div>
+        <img id="d-img" alt="">
+        <video id="d-video" muted loop playsinline></video>
+        <div class="rendering" id="d-rendering" hidden></div>
+        <figcaption><span id="d-caption"></span><span id="d-credit"></span></figcaption>
+      </figure>
+      <div class="d-media" id="d-media"></div>
+    </div>
+    <div class="d-grid">
+      <div><span class="k">In the air</span><div class="big" id="d-air"></div><small id="d-air-sub"></small></div>
+      <div><span class="k">Local offset</span><div class="big" id="d-offset"></div><small id="d-offset-sub"></small></div>
+    </div>
+    <div class="d-grid">
+      <div><span class="k" id="d-trip-k">Your trip</span><div class="mid" id="d-trip"></div><small id="d-trip-sub"></small></div>
+      <div><span class="k">Exchange</span><div class="mid" id="d-fx"></div><small id="d-fx-sub"></small></div>
+    </div>
+    <div class="d-outlook">
+      <span class="k">Seven-day outlook · highs and lows</span>
+      <svg id="d-spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div class="d-days" id="d-days"></div>
+    </div>
+    <div class="d-actions" id="d-actions"></div>
+  </aside>
+
+  <div class="board" aria-live="off">
+    <div class="k" id="board-label">Next out of ---</div>
+    <div class="flaps" id="flaps" role="img"></div>
+  </div>
+
+  <div class="totals">
+    <span class="t-extra" id="totals"></span>
+    <span class="zoom">
+      <button type="button" data-zoom="0.85" aria-label="Zoom in">+</button>
+      <button type="button" data-zoom="1.18" aria-label="Zoom out">−</button>
+    </span>
+  </div>
+
+  <div id="boot" role="status">
+    <div>
+      <div class="wordmark">MERIDIAN</div>
+      <em>Plotting the night side of the world…</em>
+      <div class="bar"><i id="boot-bar"></i></div>
+    </div>
+  </div>
+
+  <dialog id="dlg-trip" class="dialog">
+    <form method="dialog" id="form-trip" novalidate>
+      <div class="dlg-body">
+        <span class="k" id="dlg-kicker">New trip</span>
+        <h2 id="dlg-title">Where to?</h2>
+        <label class="field"><span class="k">Destination</span>
+          <input list="city-list" id="f-city" required placeholder="Search city or code…" autocomplete="off">
+          <datalist id="city-list"></datalist>
+        </label>
+        <div class="row2">
+          <label class="field"><span class="k">Depart</span><input type="date" id="f-depart" required></label>
+          <label class="field"><span class="k">Return</span><input type="date" id="f-ret" required></label>
+        </div>
+        <label class="field"><span class="k">Status</span>
+          <select id="f-status"><option value="confirmed">Confirmed</option><option value="planned">Planned</option></select>
+        </label>
+        <label class="field"><span class="k">Notes</span><input id="f-note" maxlength="140" placeholder="Optional"></label>
+        <div class="form-error" id="f-error" role="alert"></div>
+      </div>
+      <div class="dlg-actions">
+        <button type="button" class="link-btn quiet" id="f-cancel">Cancel</button>
+        <button type="submit" class="link-btn gold" id="f-submit">Save trip</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

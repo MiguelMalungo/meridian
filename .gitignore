@@ -1,0 +1,10 @@
+# secrets
+.env
+
+# personal trip data from the local server
+data/state.json
+
+# local tooling / OS
+.claude/
+.DS_Store
+node_modules/

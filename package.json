@@ -1,0 +1,13 @@
+{
+  "name": "meridian-travel-command",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sci-fi 3D travel dashboard with Higgsfield visual recon",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
