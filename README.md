@@ -40,7 +40,7 @@ files and a plain list of them are published.
 ## Controls
 
 - **Drag** the globe to turn it, and **scroll** to zoom. **Click** any light to open that destination.
-- **Home**: the logo, the Home button or the **H** key takes you back to the atlas, facing your home airport.
+- **Home**: the logo or the **H** key takes you back to the atlas, facing your home airport.
 - Press **← / →** to step through destinations, and **Esc** to close one.
 - **Your manifest** lists your trips. **Explore** lists all 120 destinations, sorted by distance, with search.
 - **Departing** changes your home airport. Arcs, distances and time offsets all follow it.

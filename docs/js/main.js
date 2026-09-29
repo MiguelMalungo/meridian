@@ -209,7 +209,6 @@ function buildStaticUi() {
   });
   $('#rows').addEventListener('click', onRowsClick);
   $('#btn-add').addEventListener('click', () => openTripDialog());
-  $('#btn-home').addEventListener('click', goHome);
   $('#btn-brand').addEventListener('click', goHome);
   $('#btn-batch').addEventListener('click', onBatchClick);
   $('#f-cancel').addEventListener('click', () => $('#dlg-trip').close());

@@ -157,16 +157,6 @@ body.focus .scrim {
 .departing .home::after { content: ''; position: absolute; left: 0; right: 14px; bottom: 0; height: 2px; background: var(--gold); }
 .departing select { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
 .departing .home i { font-style: normal; color: var(--muted); font-size: 10px; }
-.home-btn {
-  display: inline-flex; align-items: center; gap: 7px;
-  padding: 6px 13px 6px 11px;
-  border: 1px solid var(--rule); border-radius: 999px;
-  font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cream-2);
-  transition: border-color 0.2s, color 0.2s, background 0.2s;
-}
-.home-btn svg { width: 14px; height: 14px; }
-.home-btn:hover { border-color: var(--gold); color: var(--gold-2); }
-body.focus .home-btn { border-color: rgba(var(--gold-rgb), 0.65); color: var(--cream); background: rgba(var(--gold-rgb), 0.1); }
 
 /* ------------------------------------------------------------ atlas list */
 .atlas {
