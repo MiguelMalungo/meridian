@@ -958,6 +958,13 @@ export class Globe {
     new ResizeObserver(() => this.resize()).observe(el);
   }
 
+  resetZoom() {
+    this.userZoom = 1;
+    this.velYaw = 0;
+    this.velTilt = 0;
+    this.lastInteraction = this.time + 6; // hold still a moment before auto-rotating
+  }
+
   nudgeZoom(factor) {
     this.userZoom = clamp(this.userZoom * factor, 0.45, 1.6);
     this.lastInteraction = this.time;

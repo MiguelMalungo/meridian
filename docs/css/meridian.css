@@ -135,9 +135,17 @@ body.focus .scrim {
 .masthead {
   position: fixed; top: calc(var(--edge) * 0.8); left: var(--edge); z-index: 10;
 }
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.brand { display: inline-flex; align-items: center; gap: 14px; color: var(--cream); margin-left: -3px; }
+.brand .mark {
+  width: 38px; height: 38px; flex: none; overflow: visible;
+  filter: drop-shadow(0 0 12px rgba(var(--gold-rgb), 0.22));
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.3s;
+}
+.brand:hover .mark { transform: rotate(-10deg) scale(1.06); filter: drop-shadow(0 0 16px rgba(var(--gold-rgb), 0.45)); }
 .wordmark { font-weight: 700; font-size: 15px; letter-spacing: 0.62em; color: var(--cream); }
 .tagline {
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   font-family: var(--serif); font-style: italic; font-weight: 400;
   font-size: clamp(22px, 2.1vw, 30px); letter-spacing: 0.005em; color: var(--cream-2);
 }
@@ -149,18 +157,22 @@ body.focus .scrim {
 .departing .home::after { content: ''; position: absolute; left: 0; right: 14px; bottom: 0; height: 2px; background: var(--gold); }
 .departing select { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
 .departing .home i { font-style: normal; color: var(--muted); font-size: 10px; }
-.back {
-  font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted);
-  padding: 4px 0; border-bottom: 1px solid transparent;
+.home-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 6px 13px 6px 11px;
+  border: 1px solid var(--rule); border-radius: 999px;
+  font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cream-2);
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
 }
-.back:hover { color: var(--cream); border-color: var(--gold); }
-body:not(.focus) .back { display: none; }
+.home-btn svg { width: 14px; height: 14px; }
+.home-btn:hover { border-color: var(--gold); color: var(--gold-2); }
+body.focus .home-btn { border-color: rgba(var(--gold-rgb), 0.65); color: var(--cream); background: rgba(var(--gold-rgb), 0.1); }
 
 /* ------------------------------------------------------------ atlas list */
 .atlas {
   position: fixed; z-index: 10;
   left: var(--edge);
-  top: calc(var(--edge) * 0.8 + 158px);
+  top: calc(var(--edge) * 0.8 + 180px);
   bottom: calc(var(--edge) * 0.7 + 86px);
   width: min(520px, 38vw);
   display: flex; flex-direction: column;
@@ -466,6 +478,11 @@ body.focus .totals { opacity: 0; pointer-events: none; }
 }
 #boot.done { opacity: 0; visibility: hidden; }
 #boot .wordmark { font-size: 13px; }
+.boot-mark { width: 72px; height: 72px; margin: 0 auto 22px; display: block; overflow: visible; }
+.boot-mark .mk-route { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw-route 1.6s 0.2s cubic-bezier(0.6, 0, 0.2, 1) forwards; }
+.boot-mark .mk-glow, .boot-mark .mk-dest { opacity: 0; transform-origin: 37px 30.5px; animation: arrive 0.8s 1.6s ease-out forwards; }
+@keyframes draw-route { to { stroke-dashoffset: 0; } }
+@keyframes arrive { 0% { opacity: 0; transform: scale(0.3); } 60% { opacity: 1; transform: scale(1.35); } 100% { opacity: 1; transform: scale(1); } }
 #boot em { display: block; margin-top: 14px; font-family: var(--serif); font-size: 22px; color: var(--muted); }
 #boot .bar { width: 180px; height: 1px; margin: 26px auto 0; background: var(--rule); overflow: hidden; }
 #boot .bar i { display: block; height: 100%; width: 0; background: var(--gold); transition: width 0.4s ease; }
@@ -484,7 +501,7 @@ body.focus .totals { opacity: 0; pointer-events: none; }
   .tagline { font-size: 21px; }
   .stage-spacer { height: 54vh; }
   .status { top: 22px; right: 20px; }
-  .status .sun, .status .hf-text { display: none; }
+  .status .sun, .status .render-text { display: none; }
   .atlas, .detail, .board, .totals {
     position: relative; left: auto; right: auto; top: auto; bottom: auto; width: auto;
     margin: 0 20px;

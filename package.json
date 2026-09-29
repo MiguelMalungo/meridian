@@ -1,8 +1,8 @@
 {
-  "name": "meridian-travel-command",
+  "name": "meridian-flight-atlas",
   "version": "1.0.0",
   "private": true,
-  "description": "Sci-fi 3D travel dashboard with Higgsfield visual recon",
+  "description": "A cinematic flight atlas: live day/night globe, 120 destinations, trips drawn as glowing routes.",
   "type": "module",
   "scripts": {
     "start": "node server.mjs"

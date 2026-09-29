@@ -1,5 +1,5 @@
 // MERIDIAN — flight atlas: state, atlas list, destination detail, labels,
-// split-flap board and Higgsfield renders.
+// split-flap board and cinematic renders.
 
 import { Globe } from './globe.js';
 import { CITIES, CITY, guessHome, tzOffsetMinutes } from './cities.js';
@@ -26,10 +26,10 @@ const state = {
   tab: 'manifest',
   query: '',
   wxAll: {},
-  recon: {},          // code → { image?, video? } archived Higgsfield renders
+  recon: {},          // code → { image?, video? } archived renders
   jobs: {},           // request_id → { cityId, kind, status, startedAt }
-  hf: { configured: false, reachable: false },
-  cost: {},           // kind → { credits, usd } from Higgsfield /estimate
+  render: { configured: false, reachable: false },
+  cost: {},           // kind → { credits, usd } from the render API's estimate
   confirm: null,      // { code, kind }
   mediaView: {},      // code → 'photo' | 'image' | 'video'
   notes: {},          // code → { text, cls }
@@ -100,6 +100,7 @@ function fmtFlight(h) {
 
 // ------------------------------------------------------------------ boot
 async function boot() {
+  const bootStart = performance.now();
   const bar = $('#boot-bar');
   const progress = (p) => { bar.style.width = `${p}%`; };
 
@@ -130,8 +131,8 @@ async function boot() {
   progress(40);
 
   if (!state.static) {
-    const [hf, idx] = await Promise.all([S.hfStatus().catch(() => null), S.loadRecon().catch(() => null)]);
-    if (hf) state.hf = { configured: hf.configured, reachable: true };
+    const [rs, idx] = await Promise.all([S.renderStatus().catch(() => null), S.loadRenders().catch(() => null)]);
+    if (rs) state.render = { configured: rs.configured, reachable: true, video: rs.video };
     state.recon = idx?.recon || {};
     for (const [id, j] of Object.entries(idx?.jobs || {})) {
       state.jobs[id] = { cityId: j.cityId, kind: j.kind, status: 'queued', startedAt: Date.parse(j.createdAt) || Date.now() };
@@ -150,6 +151,9 @@ async function boot() {
   buildStaticUi();
   refresh();
   applyView();
+  // Let the logo's route finish drawing before the curtain lifts.
+  const minBoot = reducedMotion || document.hidden ? 0 : 2400;
+  await new Promise((r) => setTimeout(r, Math.max(0, minBoot - (performance.now() - bootStart))));
   setTimeout(() => {
     $('#boot').classList.add('done');
     globe.reveal();
@@ -162,7 +166,7 @@ async function boot() {
       updateLabelTexts();
     })
     .catch(() => {});
-  if (state.hf.configured) loadCosts();
+  if (state.render.configured) loadCosts();
   Object.keys(state.jobs).forEach(track);
 
   setInterval(tick1s, 1000);
@@ -173,10 +177,10 @@ async function boot() {
 async function loadCosts() {
   const sample = { prompt: 'Cinematic aerial establishing shot', aspect_ratio: '16:9', resolution: '1080p' };
   try {
-    state.cost.image = await S.hfEstimate('image', sample);
+    state.cost.image = await S.renderEstimate('image', sample);
   } catch { /* shown on demand */ }
   try {
-    state.cost.video = await S.hfEstimate('video', {
+    state.cost.video = await S.renderEstimate('video', {
       prompt: 'Slow cinematic drone push-in', image_url: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Troms%C3%B8_sentrum_%285835702754%29.jpg', duration: 5, resolution: '720p',
     });
   } catch { /* shown on demand */ }
@@ -205,7 +209,8 @@ function buildStaticUi() {
   });
   $('#rows').addEventListener('click', onRowsClick);
   $('#btn-add').addEventListener('click', () => openTripDialog());
-  $('#btn-back').addEventListener('click', () => select(null));
+  $('#btn-home').addEventListener('click', goHome);
+  $('#btn-brand').addEventListener('click', goHome);
   $('#btn-batch').addEventListener('click', onBatchClick);
   $('#f-cancel').addEventListener('click', () => $('#dlg-trip').close());
   $('#form-trip').addEventListener('submit', onTripSubmit);
@@ -222,8 +227,9 @@ function buildStaticUi() {
   syncSfx();
 
   window.addEventListener('keydown', (e) => {
-    if ($('#dlg-trip').open || e.target.matches('input, textarea, select')) return;
+    if ($('#dlg-trip').open || e.target?.matches?.('input, textarea, select')) return;
     if (e.key === 'Escape' && state.selected) select(null);
+    if ((e.key === 'h' || e.key === 'H') && !e.metaKey && !e.ctrlKey && !e.altKey) goHome();
     if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && state.selected) step(e.key === 'ArrowRight' ? 1 : -1);
   });
   window.addEventListener('resize', () => {
@@ -390,9 +396,9 @@ function renderFoot() {
     batchBtn.textContent = 'Stop';
     return;
   }
-  if (!state.hf.configured) {
+  if (!state.render.configured) {
     $('#foot-note').textContent = renders
-      ? `${renders} stills rendered with Higgsfield · photos via Wikipedia`
+      ? `${renders} cinematic renders · photos via Wikipedia`
       : 'Photos courtesy of Wikipedia';
     batchBtn.hidden = true;
     return;
@@ -599,9 +605,9 @@ function tick1s() {
     const f = (v, pos, neg) => `${Math.abs(v).toFixed(1)}°${v >= 0 ? pos : neg}`;
     $('#sun-line').textContent = `Sun over ${f(sp.lat, 'N', 'S')} ${f(sp.lon, 'E', 'W')} · ${now.toISOString().slice(11, 16)} UTC`;
   }
-  $('#hf-dot').parentElement.hidden = !state.hf.reachable;
-  $('#hf-dot').dataset.state = state.hf.configured ? 'ok' : 'warn';
-  $('#hf-dot').parentElement.title = state.hf.configured ? 'Higgsfield linked' : 'Add HF_CREDENTIALS to .env to enable renders';
+  $('#render-dot').parentElement.hidden = !state.render.reachable;
+  $('#render-dot').dataset.state = state.render.configured ? 'ok' : 'warn';
+  $('#render-dot').parentElement.title = state.render.configured ? 'Renders enabled' : 'Configure RENDER_* in .env to enable renders';
   updateBoard();
   if (state.selected) updateDetailClock();
   updateJobOverlay();
@@ -635,6 +641,17 @@ function select(code, { fly = true, sound = true } = {}) {
     else $('#detail').scrollTop = 0;
   }
   applyView();
+}
+
+// Home: back to the atlas, default zoom, globe turned to face the home airport.
+function goHome() {
+  if (state.selected) select(null);
+  else sfx.release();
+  const h = homeCity();
+  globe?.resetZoom();
+  globe?.flyTo(h.lat, h.lon);
+  if (isMobile()) window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+  else $('#rows').scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
 }
 
 function step(dir) {
@@ -843,11 +860,11 @@ function renderFigure() {
   if (view === 'video') {
     src = r.video.file;
     caption = c.hint.split(/,| and /)[0];
-    credit = 'Flyover · Higgsfield Kling';
+    credit = 'Flyover render';
   } else if (view === 'image') {
     src = r.image.file;
     caption = c.hint.split(/,| and /)[0];
-    credit = 'Rendered · Higgsfield Soul';
+    credit = 'Cinematic render';
   } else if (w?.image) {
     src = w.image;
     caption = w.description || `${c.name}, ${c.country}`;
@@ -919,7 +936,7 @@ function renderMediaControls() {
     if (job[1].status === 'queued') parts.push('<button class="link-btn quiet" type="button" data-media="cancel">Cancel</button>');
   } else {
     rendering.hidden = true;
-    if (!state.hf.configured) {
+    if (!state.render.configured) {
       parts.push('');
     } else if (state.confirm?.code === code) {
       const kind = state.confirm.kind;
@@ -929,7 +946,7 @@ function renderMediaControls() {
         <button class="link-btn quiet" type="button" data-media="no">Cancel</button></div>`);
     } else {
       parts.push(`<button class="link-btn" type="button" data-media="ask:image">${r.image ? 'Re-render still' : 'Render cinematic still'}${costLabel('image')}</button>`);
-      if (r.image && renderFresh(r.image)) {
+      if (r.image && renderFresh(r.image) && state.render.video) {
         parts.push(`<button class="link-btn quiet" type="button" data-media="ask:video">${r.video ? 'Re-render flyover' : '5s flyover'}${costLabel('video')}</button>`);
       }
     }
@@ -966,7 +983,7 @@ async function onMediaClick(e) {
   } else if (act === 'ask') {
     if (!state.cost[arg]) {
       try {
-        state.cost[arg] = await S.hfEstimate(arg, buildInput(arg, code));
+        state.cost[arg] = await S.renderEstimate(arg, buildInput(arg, code));
       } catch (err) {
         return setNote(code, errText(err), 'err');
       }
@@ -984,7 +1001,7 @@ async function onMediaClick(e) {
     const job = jobFor(code);
     if (!job) return;
     try {
-      await S.hfCancel(job[0]);
+      await S.renderCancel(job[0]);
       delete state.jobs[job[0]];
       setNote(code, 'Cancelled before it started. Credits refunded.');
     } catch (err) {
@@ -1003,7 +1020,7 @@ function buildInput(kind, code) {
 
 async function generate(kind, code) {
   try {
-    const res = await S.hfGenerate(kind, code, buildInput(kind, code));
+    const res = await S.renderGenerate(kind, code, buildInput(kind, code));
     state.jobs[res.request_id] = { cityId: code, kind, status: res.status || 'queued', startedAt: Date.now() };
     setNote(code, '');
     sfx.commit();
@@ -1056,9 +1073,9 @@ async function track(id) {
 
 function errText(err) {
   const msg = err?.message || String(err);
-  if (err?.status === 503 && /not configured/i.test(msg)) return 'Higgsfield is not connected. Add HF_CREDENTIALS to .env and restart.';
-  if (err?.status === 401 || /invalid credentials/i.test(msg)) return 'Higgsfield rejected the key (401). Check HF_CREDENTIALS in .env.';
-  if (err?.status === 402 || /insufficient|balance|not_enough_credits/i.test(msg)) return 'Your Higgsfield API balance is empty. Top up at console.higgsfield.ai (a saved card alone adds no credits). Nothing was charged.';
+  if (err?.status === 503 && /not configured/i.test(msg)) return 'Rendering is not set up. Fill in RENDER_* in .env and restart.';
+  if (err?.status === 401 || /invalid credentials/i.test(msg)) return 'The render API rejected the key (401). Check RENDER_API_KEY in .env.';
+  if (err?.status === 402 || /insufficient|balance|not_enough_credits/i.test(msg)) return 'The render API balance is empty. Top it up in your provider console. Nothing was charged.';
   if (/concurrent/i.test(msg)) return 'Too many renders at once. Try again in a moment.';
   return msg;
 }

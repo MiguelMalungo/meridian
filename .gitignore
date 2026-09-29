@@ -1,8 +1,8 @@
-# secrets
+# secrets and provider config
 .env
 
-# personal trip data from the local server
-data/state.json
+# local server data: trips and the private render log
+/data/
 
 # local tooling / OS
 .claude/

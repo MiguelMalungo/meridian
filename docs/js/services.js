@@ -1,4 +1,4 @@
-// Network layer: local server (state + Higgsfield proxy) and public data feeds.
+// Network layer: local server (state + render proxy) and public data feeds.
 
 async function json(url, opts = {}) {
   const res = await fetch(url, {
@@ -24,15 +24,15 @@ async function json(url, opts = {}) {
 export const loadState = () => json('/api/state');
 export const saveState = (state) => json('/api/state', { method: 'PUT', body: JSON.stringify(state) });
 
-// ------------------------------------------------------------ higgsfield (via local proxy)
-export const hfStatus = () => json('/api/hf/status');
-export const loadRecon = () => json('/api/recon');
-export const hfEstimate = (kind, input) =>
-  json('/api/hf/estimate', { method: 'POST', body: JSON.stringify({ kind, input }) });
-export const hfGenerate = (kind, cityId, input) =>
-  json('/api/hf/generate', { method: 'POST', body: JSON.stringify({ kind, cityId, input }) });
-export const hfRequest = (id) => json(`/api/hf/requests/${id}`);
-export const hfCancel = (id) => json(`/api/hf/requests/${id}/cancel`, { method: 'POST' });
+// ------------------------------------------------------------ renders (via local proxy)
+export const renderStatus = () => json('/api/render/status');
+export const loadRenders = () => json('/api/renders');
+export const renderEstimate = (kind, input) =>
+  json('/api/render/estimate', { method: 'POST', body: JSON.stringify({ kind, input }) });
+export const renderGenerate = (kind, cityId, input) =>
+  json('/api/render/generate', { method: 'POST', body: JSON.stringify({ kind, cityId, input }) });
+export const renderRequest = (id) => json(`/api/render/requests/${id}`);
+export const renderCancel = (id) => json(`/api/render/requests/${id}/cancel`, { method: 'POST' });
 
 // Poll with backoff (2s → 10s, jittered) until a terminal status.
 export async function pollRequest(id, onTick, { signal } = {}) {
@@ -42,14 +42,14 @@ export async function pollRequest(id, onTick, { signal } = {}) {
     if (signal?.aborted) throw new Error('aborted');
     let res;
     try {
-      res = await hfRequest(id);
+      res = await renderRequest(id);
     } catch (err) {
       if (err.status === 401 || err.status === 404) throw err;
       res = { status: 'retrying' };
     }
     onTick?.(res, Date.now() - started);
     if (['completed', 'failed', 'nsfw', 'canceled'].includes(res.status)) return res;
-    if (Date.now() - started > 15 * 60 * 1000) throw new Error('Timed out waiting for Higgsfield');
+    if (Date.now() - started > 15 * 60 * 1000) throw new Error('Timed out waiting for the render');
     await new Promise((r) => setTimeout(r, delay + Math.random() * 500));
     delay = Math.min(delay * 1.5, 10000);
   }

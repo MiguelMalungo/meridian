@@ -1,4 +1,4 @@
-// Batch-render Higgsfield stills through the local Meridian server
+// Batch-render cinematic stills through the local Meridian server
 // (start it first with `node server.mjs`; the API key never leaves it).
 // Usage: [CONCURRENCY=3] node scripts/render-stills.mjs [CODE,CODE,...]
 //        no args = every destination that doesn't have a still yet
@@ -24,11 +24,11 @@ async function call(method, path, body) {
 }
 
 const only = process.argv[2]?.split(',').map((s) => s.trim().toUpperCase());
-const index = await call('GET', '/api/recon');
+const index = await call('GET', '/api/renders');
 const todo = CITIES.filter((c) => (!only || only.includes(c.code)) && !index.recon?.[c.code]?.image);
 
 if (!todo.length) console.log('Every destination already has a still.');
-const est = await call('POST', '/api/hf/estimate', { kind: 'image', input: input(todo[0] || CITIES[0]) });
+const est = await call('POST', '/api/render/estimate', { kind: 'image', input: input(todo[0] || CITIES[0]) });
 const unit = Number(est.usd);
 if (!Number.isFinite(unit) || unit > MAX_USD_PER_STILL) {
   console.error(`Aborting: estimate $${est.usd} per still exceeds the $${MAX_USD_PER_STILL} guard`);
@@ -44,11 +44,11 @@ async function renderOne(c) {
   let job;
   for (let attempt = 0; ; attempt++) {
     try {
-      job = await call('POST', '/api/hf/generate', { kind: 'image', cityId: c.code, input: input(c) });
+      job = await call('POST', '/api/render/generate', { kind: 'image', cityId: c.code, input: input(c) });
       break;
     } catch (err) {
       if (/concurrent/i.test(err.message) && attempt < 240) { await sleep(5000); continue; }
-      if (/not_enough_credits|insufficient|balance/i.test(err.message)) halt = 'Higgsfield API balance is empty. Top up at console.higgsfield.ai.';
+      if (/not_enough_credits|insufficient|balance/i.test(err.message)) halt = 'Render API balance is empty. Top it up in your provider console.';
       return { code: c.code, status: 'error', error: err.message };
     }
   }
@@ -58,7 +58,7 @@ async function renderOne(c) {
     await sleep(delay);
     let r;
     try {
-      r = await call('GET', `/api/hf/requests/${job.request_id}`);
+      r = await call('GET', `/api/render/requests/${job.request_id}`);
     } catch (err) {
       if (Date.now() - started > 10 * 60 * 1000) return { code: c.code, status: 'timeout', error: err.message };
       continue;

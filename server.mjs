@@ -1,6 +1,7 @@
 // MERIDIAN — local server
-// Serves the dashboard, stores trip state, and proxies Higgsfield so the API
-// secret never reaches the browser. Zero dependencies: `node server.mjs`.
+// Serves the atlas, stores trip state, and proxies the image-render API so the
+// key never reaches the browser. Zero dependencies: `node server.mjs`.
+// Render provider details live only in .env (see .env.example).
 
 import http from 'node:http';
 import fs from 'node:fs/promises';
@@ -13,7 +14,10 @@ const PUBLIC_DIR = path.join(ROOT, 'docs');
 const DATA_DIR = path.join(ROOT, 'data');
 const MEDIA_DIR = path.join(PUBLIC_DIR, 'media');
 const STATE_FILE = path.join(DATA_DIR, 'state.json');
-const RECON_FILE = path.join(MEDIA_DIR, 'index.json');
+// Full render records (prompts, request ids, provider URLs) stay private...
+const RECON_FILE = path.join(DATA_DIR, 'renders.json');
+// ...the published site only gets a list of image files.
+const PUBLIC_MANIFEST = path.join(MEDIA_DIR, 'index.json');
 
 // ---------------------------------------------------------------- env
 function loadEnv(file) {
@@ -35,23 +39,21 @@ loadEnv(path.join(ROOT, '.env'));
 
 const PORT = Number(process.env.PORT) || 4317;
 const HOST = process.env.HOST || '127.0.0.1';
-const HF_BASE = 'https://api.higgsfield.ai';
+const RENDER_BASE = (process.env.RENDER_API_BASE || '').trim().replace(/\/+$/, '');
 
-// Accept either HF_API_KEY_ID + HF_API_KEY_SECRET, or one "id:secret" string.
-function hfCredentials() {
-  const id = process.env.HF_API_KEY_ID?.trim();
-  const secret = process.env.HF_API_KEY_SECRET?.trim();
-  if (id && secret) return `${id}:${secret}`;
-  const combined = (process.env.HF_CREDENTIALS || process.env.HF_API_KEY || '').trim();
-  if (/^[^:\s]+:[^:\s]+$/.test(combined)) return combined;
-  return null;
+// Endpoints the atlas may call, configured in .env.
+const RENDER_MODELS = Object.fromEntries(
+  [['image', process.env.RENDER_IMAGE_MODEL], ['video', process.env.RENDER_VIDEO_MODEL]]
+    .filter(([, v]) => v && v.trim())
+    .map(([k, v]) => [k, v.trim()]),
+);
+
+// RENDER_API_KEY is "KEY_ID:KEY_SECRET".
+function renderKey() {
+  const key = (process.env.RENDER_API_KEY || '').trim();
+  return /^[^:\s]+:[^:\s]+$/.test(key) ? key : null;
 }
-
-// Whitelisted Higgsfield endpoints the dashboard may call.
-const HF_MODELS = {
-  image: 'higgsfield-ai/soul/v2/standard',
-  video: 'kling-video/v3.0-turbo/image-to-video',
-};
+const renderReady = () => Boolean(renderKey() && RENDER_BASE && RENDER_MODELS.image);
 
 const ASPECTS = new Set(['16:9', '9:16', '4:3', '3:4', '1:1', '2:3', '3:2']);
 const RESOLUTIONS = new Set(['720p', '1080p']);
@@ -175,11 +177,11 @@ function validateState(body) {
   return { home, trips };
 }
 
-// ---------------------------------------------------------------- higgsfield
-async function hf(method, pathname, body) {
-  const creds = hfCredentials();
-  if (!creds) throw httpError(503, 'Higgsfield credentials are not configured on the server');
-  const res = await fetch(`${HF_BASE}/${pathname}`, {
+// ---------------------------------------------------------------- render API
+async function renderApi(method, pathname, body) {
+  const creds = renderKey();
+  if (!creds || !RENDER_BASE) throw httpError(503, 'Rendering is not configured on the server');
+  const res = await fetch(`${RENDER_BASE}/${pathname}`, {
     method,
     headers: {
       Authorization: `Key ${creds}`,
@@ -197,7 +199,7 @@ async function hf(method, pathname, body) {
   }
   if (!res.ok) {
     const detail = typeof data.detail === 'string' ? data.detail : JSON.stringify(data.detail ?? data);
-    throw httpError(res.status, `Higgsfield ${res.status}: ${detail}`);
+    throw httpError(res.status, `Render API ${res.status}: ${detail}`);
   }
   return data;
 }
@@ -212,10 +214,32 @@ function withRecon(fn) {
     idx.jobs ??= {};
     const out = await fn(idx);
     await writeJson(RECON_FILE, idx);
+    await writeJson(PUBLIC_MANIFEST, publicManifest(idx));
     return out;
   });
   reconLock = run.catch(() => {});
   return run;
+}
+
+// What the static site needs: just the file for each still / flyover.
+function publicManifest(idx) {
+  const recon = {};
+  for (const [code, entry] of Object.entries(idx.recon || {})) {
+    for (const kind of ['image', 'video']) {
+      if (entry[kind]?.file) (recon[code] ??= {})[kind] = { file: entry[kind].file };
+    }
+  }
+  return { recon };
+}
+
+// One-time move of full records out of the published folder.
+async function migrateRenderIndex() {
+  if (existsSync(RECON_FILE)) return;
+  const legacy = await readJson(PUBLIC_MANIFEST, null);
+  const hasPrivate = legacy && (legacy.jobs || Object.values(legacy.recon || {}).some((e) => e.image?.prompt || e.video?.prompt));
+  if (!hasPrivate) return;
+  await writeJson(RECON_FILE, { recon: legacy.recon || {}, jobs: legacy.jobs || {} });
+  await writeJson(PUBLIC_MANIFEST, publicManifest(legacy));
 }
 
 function outputUrl(result) {
@@ -282,38 +306,38 @@ async function handleApi(req, res, url) {
     return send(res, 200, state);
   }
 
-  if (pathname === '/api/hf/status' && req.method === 'GET') {
-    return send(res, 200, { configured: Boolean(hfCredentials()), models: HF_MODELS });
+  if (pathname === '/api/render/status' && req.method === 'GET') {
+    return send(res, 200, { configured: renderReady(), video: Boolean(RENDER_MODELS.video) });
   }
 
-  if (pathname === '/api/recon' && req.method === 'GET') {
+  if (pathname === '/api/renders' && req.method === 'GET') {
     return send(res, 200, await readJson(RECON_FILE, emptyRecon()));
   }
 
-  if (pathname === '/api/hf/estimate' && req.method === 'POST') {
+  if (pathname === '/api/render/estimate' && req.method === 'POST') {
     const { kind, input } = await readBody(req);
-    if (!HF_MODELS[kind]) throw httpError(400, 'Unknown generation kind');
-    const data = await hf('POST', `estimate/${HF_MODELS[kind]}`, sanitizeInput(kind, input));
+    if (!RENDER_MODELS[kind]) throw httpError(400, 'Unknown generation kind');
+    const data = await renderApi('POST', `estimate/${RENDER_MODELS[kind]}`, sanitizeInput(kind, input));
     return send(res, 200, data);
   }
 
-  if (pathname === '/api/hf/generate' && req.method === 'POST') {
+  if (pathname === '/api/render/generate' && req.method === 'POST') {
     const { kind, cityId, input } = await readBody(req);
-    if (!HF_MODELS[kind]) throw httpError(400, 'Unknown generation kind');
+    if (!RENDER_MODELS[kind]) throw httpError(400, 'Unknown generation kind');
     if (!/^[A-Z]{3}$/.test(cityId || '')) throw httpError(400, 'Invalid cityId');
     const clean = sanitizeInput(kind, input);
-    const data = await hf('POST', HF_MODELS[kind], clean);
-    if (!data.request_id) throw httpError(502, 'Higgsfield did not return a request id');
+    const data = await renderApi('POST', RENDER_MODELS[kind], clean);
+    if (!data.request_id) throw httpError(502, 'Render API did not return a request id');
     await withRecon((idx) => {
       idx.jobs[data.request_id] = { cityId, kind, prompt: clean.prompt, createdAt: new Date().toISOString() };
     });
     return send(res, 202, { request_id: data.request_id, status: data.status || 'queued' });
   }
 
-  const statusMatch = pathname.match(/^\/api\/hf\/requests\/([0-9a-f-]{36})$/i);
+  const statusMatch = pathname.match(/^\/api\/render\/requests\/([0-9a-f-]{36})$/i);
   if (statusMatch && req.method === 'GET') {
     const id = statusMatch[1];
-    const result = await hf('GET', `requests/${id}/status`);
+    const result = await renderApi('GET', `requests/${id}/status`);
     const idx = await readJson(RECON_FILE, emptyRecon());
     const job = idx.jobs?.[id];
     if (result.status === 'completed') {
@@ -331,9 +355,9 @@ async function handleApi(req, res, url) {
     return send(res, 200, { status: result.status });
   }
 
-  const cancelMatch = pathname.match(/^\/api\/hf\/requests\/([0-9a-f-]{36})\/cancel$/i);
+  const cancelMatch = pathname.match(/^\/api\/render\/requests\/([0-9a-f-]{36})\/cancel$/i);
   if (cancelMatch && req.method === 'POST') {
-    await hf('POST', `requests/${cancelMatch[1]}/cancel`);
+    await renderApi('POST', `requests/${cancelMatch[1]}/cancel`);
     await withRecon((i) => { delete i.jobs[cancelMatch[1]]; });
     return send(res, 200, { status: 'canceled' });
   }
@@ -393,9 +417,10 @@ const server = http.createServer(async (req, res) => {
 
 await fs.mkdir(DATA_DIR, { recursive: true });
 await fs.mkdir(MEDIA_DIR, { recursive: true });
+await migrateRenderIndex();
 
 server.listen(PORT, HOST, () => {
-  const link = hfCredentials() ? 'ONLINE' : 'OFFLINE (add credentials to .env)';
-  console.log(`\n  MERIDIAN travel command  →  http://localhost:${PORT}`);
-  console.log(`  Higgsfield link          →  ${link}\n`);
+  const link = renderReady() ? 'ONLINE' : 'OFF (configure RENDER_* in .env)';
+  console.log(`\n  MERIDIAN flight atlas  →  http://localhost:${PORT}`);
+  console.log(`  Renders                →  ${link}\n`);
 });

@@ -1,5 +1,5 @@
 // Waypoint catalogue. Codes are 3-letter callsigns (IATA-style where one exists).
-// hint feeds the Higgsfield prompt so each render gets recognisable scenery.
+// hint feeds the render prompt so each still gets recognisable scenery.
 
 const C = (code, name, country, lat, lon, tz, cur, hint = '', wiki = name) => ({ code, name, country, lat, lon, tz, cur, hint, wiki });
 

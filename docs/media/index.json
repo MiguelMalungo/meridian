@@ -2,1084 +2,603 @@
   "recon": {
     "TOS": {
       "image": {
-        "file": "media/TOS-image-d5652313.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/74690a73-8721-4f9b-a82e-091767ba65cd.png",
-        "requestId": "d5652313-145b-4a79-9ca3-ddda0c75221f",
-        "prompt": "Cinematic aerial establishing shot of Tromsø, Norway: Arctic fjords under the aurora, the Arctic Cathedral and snowy peaks. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:13:53.796Z"
+        "file": "media/TOS-image-d5652313.jpg"
       }
     },
     "LIS": {
       "image": {
-        "file": "media/LIS-image-f3052e84.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/107f8607-9afb-4295-8c07-43280e6592b8.png",
-        "requestId": "f3052e84-1081-4ddf-bb8f-96c15ab11778",
-        "prompt": "Cinematic aerial establishing shot of Lisbon, Portugal: terracotta rooftops of Alfama, the 25 de Abril bridge over the Tagus. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:16:45.827Z"
+        "file": "media/LIS-image-f3052e84.jpg"
       }
     },
     "FNC": {
       "image": {
-        "file": "media/FNC-image-773246c5.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/4e9a6c1b-4016-4d0a-930d-511985ab995f.png",
-        "requestId": "773246c5-a556-46d8-b4fb-8260db7fb7ce",
-        "prompt": "Cinematic aerial establishing shot of Funchal, Portugal: volcanic cliffs of Madeira, terraced hillsides above the Atlantic. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:18:39.401Z"
+        "file": "media/FNC-image-773246c5.jpg"
       }
     },
     "DUB": {
       "image": {
-        "file": "media/DUB-image-57c95531.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/e439636d-f3aa-4d21-a471-682408e054e2.png",
-        "requestId": "57c95531-4644-4eca-8c2c-10c4f492c553",
-        "prompt": "Cinematic aerial establishing shot of Dublin, Ireland: River Liffey bridges and Georgian terraces. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:20:23.216Z"
+        "file": "media/DUB-image-57c95531.jpg"
       }
     },
     "BER": {
       "image": {
-        "file": "media/BER-image-54d655d4.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9ace87e7-6a41-4902-8111-fd42e67068ea.png",
-        "requestId": "54d655d4-7dd3-4d4a-a9ee-43103bb9ce75",
-        "prompt": "Cinematic aerial establishing shot of Berlin, Germany: Fernsehturm TV tower and the Spree. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:22:06.351Z"
+        "file": "media/BER-image-54d655d4.jpg"
       }
     },
     "AMS": {
       "image": {
-        "file": "media/AMS-image-8e61def3.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/98ed6b34-0ccd-4f6a-ac19-d76a2c288b07.png",
-        "requestId": "8e61def3-92e1-4eb3-8b5e-7d3991677d42",
-        "prompt": "Cinematic aerial establishing shot of Amsterdam, Netherlands: concentric canals lined with gabled houses. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:23:38.040Z"
+        "file": "media/AMS-image-8e61def3.jpg"
       }
     },
     "PRG": {
       "image": {
-        "file": "media/PRG-image-25266f5c.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/e2e43017-11aa-4a1f-8b42-5980d3443450.png",
-        "requestId": "25266f5c-13a5-4ee0-9a24-704f0aebbdac",
-        "prompt": "Cinematic aerial establishing shot of Prague, Czechia: Charles Bridge and Prague Castle over the Vltava. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:23:41.454Z"
+        "file": "media/PRG-image-25266f5c.jpg"
       }
     },
     "VIE": {
       "image": {
-        "file": "media/VIE-image-8166d80b.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/6a06b474-2360-4073-8305-796c9ed9fc24.png",
-        "requestId": "8166d80b-94c1-48ad-a0b7-edb81f3d297f",
-        "prompt": "Cinematic aerial establishing shot of Vienna, Austria: St. Stephen's Cathedral and the Ringstrasse. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:24:16.392Z"
+        "file": "media/VIE-image-8166d80b.jpg"
       }
     },
     "ZRH": {
       "image": {
-        "file": "media/ZRH-image-98b310b1.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/e1833d1a-3171-420a-b93a-e23f50690e31.png",
-        "requestId": "98b310b1-d3f7-4eec-96ca-2db69465df0a",
-        "prompt": "Cinematic aerial establishing shot of Zurich, Switzerland: Lake Zurich with the Alps on the horizon. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:24:27.879Z"
+        "file": "media/ZRH-image-98b310b1.jpg"
       }
     },
     "VCE": {
       "image": {
-        "file": "media/VCE-image-2dbcc26e.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/4732aa0e-af14-437e-9166-7dd7835f6e04.png",
-        "requestId": "2dbcc26e-eb91-4778-b63b-f06bb98c1c3d",
-        "prompt": "Cinematic aerial establishing shot of Venice, Italy: Grand Canal, gondolas and St. Mark's Basilica. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:26:27.290Z"
+        "file": "media/VCE-image-2dbcc26e.jpg"
       }
     },
     "ROM": {
       "image": {
-        "file": "media/ROM-image-ce04c86e.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/8cbcb7e2-1be6-488d-93b9-b049e71a32e3.png",
-        "requestId": "ce04c86e-f10a-4dd6-b77c-364a405c3df4",
-        "prompt": "Cinematic aerial establishing shot of Rome, Italy: the Colosseum and domes of the historic centre. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:28:49.873Z"
+        "file": "media/ROM-image-ce04c86e.jpg"
       }
     },
     "ATH": {
       "image": {
-        "file": "media/ATH-image-4b1acc61.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/c486848a-f1b4-40a8-9fe1-9cef0022f70f.png",
-        "requestId": "4b1acc61-56c2-4933-b9ef-6d9fc140c01f",
-        "prompt": "Cinematic aerial establishing shot of Athens, Greece: the Acropolis and Parthenon above the city. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:29:39.566Z"
+        "file": "media/ATH-image-4b1acc61.jpg"
       }
     },
     "JTR": {
       "image": {
-        "file": "media/JTR-image-564275a6.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/3cc2c42e-80cb-4a0f-b25d-a2b47688888c.png",
-        "requestId": "564275a6-3a64-4e8c-8b2b-4150a93133db",
-        "prompt": "Cinematic aerial establishing shot of Santorini, Greece: white cubic houses and blue domes on the caldera cliffs. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:30:25.456Z"
+        "file": "media/JTR-image-564275a6.jpg"
       }
     },
     "IST": {
       "image": {
-        "file": "media/IST-image-5d66b811.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/fdf03ad9-930a-4704-8a62-074d04751e21.png",
-        "requestId": "5d66b811-a3b2-4e02-aab2-21b1e3c682ab",
-        "prompt": "Cinematic aerial establishing shot of Istanbul, Türkiye: minarets of the Blue Mosque and the Bosphorus. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:32:03.311Z"
+        "file": "media/IST-image-5d66b811.jpg"
       }
     },
     "PDL": {
       "image": {
-        "file": "media/PDL-image-4dc28cc6.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/fef95057-3166-46a1-8f48-f3aadcdf595e.png",
-        "requestId": "4dc28cc6-9308-4653-9a63-5a0986dcac4c",
-        "prompt": "Cinematic aerial establishing shot of Ponta Delgada, Portugal: Azores crater lakes of Sete Cidades, emerald calderas. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:34:20.778Z"
+        "file": "media/PDL-image-4dc28cc6.jpg"
       }
     },
     "CPH": {
       "image": {
-        "file": "media/CPH-image-3e6ba5f9.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/cc90b0e2-ed46-49a9-8ce9-119c26de6fac.png",
-        "requestId": "3e6ba5f9-9a4e-463b-927e-71818f878967",
-        "prompt": "Cinematic aerial establishing shot of Copenhagen, Denmark: colourful Nyhavn harbour. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:35:48.887Z"
+        "file": "media/CPH-image-3e6ba5f9.jpg"
       }
     },
     "OSL": {
       "image": {
-        "file": "media/OSL-image-63502ec8.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/46ed1680-1c0c-48fa-8828-95e290032b82.png",
-        "requestId": "63502ec8-7c65-465a-a4d7-90e873af0a93",
-        "prompt": "Cinematic aerial establishing shot of Oslo, Norway: Oslofjord and the angular Opera House. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:36:37.294Z"
+        "file": "media/OSL-image-63502ec8.jpg"
       }
     },
     "REK": {
       "image": {
-        "file": "media/REK-image-85b01da2.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/8c67d1cb-82ad-45a0-a2c1-e110d3135fac.png",
-        "requestId": "85b01da2-af88-4959-9c70-623472b86dea",
-        "prompt": "Cinematic aerial establishing shot of Reykjavík, Iceland: Hallgrímskirkja church, aurora borealis over volcanic landscape. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:36:59.405Z"
+        "file": "media/REK-image-85b01da2.jpg"
       }
     },
     "LYR": {
       "image": {
-        "file": "media/LYR-image-451b3f96.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/4fb2e7d0-358b-4af7-b1a7-bbc1a1a548e0.png",
-        "requestId": "451b3f96-616f-4315-9c96-a504178b1409",
-        "prompt": "Cinematic aerial establishing shot of Longyearbyen, Svalbard: arctic glaciers and snow-covered peaks under polar twilight. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:37:29.731Z"
+        "file": "media/LYR-image-451b3f96.jpg"
       }
     },
     "HEL": {
       "image": {
-        "file": "media/HEL-image-8c5dad7f.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/cc3e7506-8220-4597-94a7-7d7e0e56028f.png",
-        "requestId": "8c5dad7f-7499-431d-933c-28b7e771f2dc",
-        "prompt": "Cinematic aerial establishing shot of Helsinki, Finland: Helsinki Cathedral and the Baltic archipelago. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:38:53.261Z"
+        "file": "media/HEL-image-8c5dad7f.jpg"
       }
     },
     "STO": {
       "image": {
-        "file": "media/STO-image-243c61ba.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/f52f55b5-33d9-44e9-b8f1-210d1d97b604.png",
-        "requestId": "243c61ba-16fc-432b-a6ee-63d1224ecb36",
-        "prompt": "Cinematic aerial establishing shot of Stockholm, Sweden: Gamla Stan islands and waterways. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:39:51.332Z"
+        "file": "media/STO-image-243c61ba.jpg"
       }
     },
     "DOH": {
       "image": {
-        "file": "media/DOH-image-8b95530a.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/d6177fdc-c778-4a21-9db0-78b87429b830.png",
-        "requestId": "8b95530a-8706-4f66-adb8-8e49f3b2bf45",
-        "prompt": "Cinematic aerial establishing shot of Doha, Qatar: West Bay towers along the corniche. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:40:36.595Z"
+        "file": "media/DOH-image-8b95530a.jpg"
       }
     },
     "AMM": {
       "image": {
-        "file": "media/AMM-image-24b32ac2.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/1a95b192-c14b-4d64-8ed4-5da3829f5b0c.png",
-        "requestId": "24b32ac2-0842-4147-b90d-a2f0329b59a5",
-        "prompt": "Cinematic aerial establishing shot of Amman, Jordan: limestone city on hills, Petra canyons beyond. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:46:42.902Z"
+        "file": "media/AMM-image-24b32ac2.jpg"
       }
     },
     "TLV": {
       "image": {
-        "file": "media/TLV-image-983f8951.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/fcbf43de-5366-4299-aa15-58f415b464b9.png",
-        "requestId": "983f8951-2d10-4933-882b-2ff3b880a50a",
-        "prompt": "Cinematic aerial establishing shot of Tel Aviv, Israel: Mediterranean beachfront and Bauhaus white city. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:46:47.497Z"
+        "file": "media/TLV-image-983f8951.jpg"
       }
     },
     "RAK": {
       "image": {
-        "file": "media/RAK-image-05a64d1d.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/4a5ad029-ba7e-4493-9bb6-2271e8583550.png",
-        "requestId": "05a64d1d-ed5e-44f6-8037-f41ba2539a11",
-        "prompt": "Cinematic aerial establishing shot of Marrakech, Morocco: Koutoubia minaret, red medina walls, Atlas mountains. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:47:25.848Z"
+        "file": "media/RAK-image-05a64d1d.jpg"
       }
     },
     "CAI": {
       "image": {
-        "file": "media/CAI-image-b9e1c5b3.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/e2a35025-6e12-4708-bd7c-ec19f43379df.png",
-        "requestId": "b9e1c5b3-77af-4382-8174-1e8287b7b3f1",
-        "prompt": "Cinematic aerial establishing shot of Cairo, Egypt: the Giza pyramids at the edge of the megacity. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:48:50.462Z"
+        "file": "media/CAI-image-b9e1c5b3.jpg"
       }
     },
     "LOS": {
       "image": {
-        "file": "media/LOS-image-c29f524d.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/b90d0953-789a-4981-8399-02e0701ba5dc.png",
-        "requestId": "c29f524d-c1d0-4310-9426-4766af21bb69",
-        "prompt": "Cinematic aerial establishing shot of Lagos, Nigeria: Lagos lagoon and Victoria Island skyline. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:50:05.896Z"
+        "file": "media/LOS-image-c29f524d.jpg"
       }
     },
     "PAR": {
       "image": {
-        "file": "media/PAR-image-2f19e3d2.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/83c06c86-9655-4863-94e4-7e5249bebea7.png",
-        "requestId": "2f19e3d2-4ffa-4397-bc18-87ea6accace4",
-        "prompt": "Cinematic aerial establishing shot of Paris, France: Eiffel Tower and Haussmann boulevards along the Seine. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:51:15.096Z"
+        "file": "media/PAR-image-2f19e3d2.jpg"
       }
     },
     "JNB": {
       "image": {
-        "file": "media/JNB-image-87055c75.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/3f41cf70-04f1-46c0-9f69-d7db53e4d29f.png",
-        "requestId": "87055c75-d6e9-48f3-8b55-671b22e2720a",
-        "prompt": "Cinematic aerial establishing shot of Johannesburg, South Africa: Hillbrow tower and highveld skyline. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:52:01.718Z"
+        "file": "media/JNB-image-87055c75.jpg"
       }
     },
     "CPT": {
       "image": {
-        "file": "media/CPT-image-7f00b62d.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/cd0870b4-f273-48da-b81c-90362b214edf.png",
-        "requestId": "7f00b62d-623e-4d0f-862f-5fde7a09170f",
-        "prompt": "Cinematic aerial establishing shot of Cape Town, South Africa: Table Mountain above the city and Atlantic coast. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:53:20.694Z"
+        "file": "media/CPT-image-7f00b62d.jpg"
       }
     },
     "NBO": {
       "image": {
-        "file": "media/NBO-image-aac62807.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/62ea23bc-a241-444e-9450-40049e6d1853.png",
-        "requestId": "aac62807-828c-4aa0-9208-54b135a24947",
-        "prompt": "Cinematic aerial establishing shot of Nairobi, Kenya: savannah wildlife with the city skyline behind. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:53:32.358Z"
+        "file": "media/NBO-image-aac62807.jpg"
       }
     },
     "SEZ": {
       "image": {
-        "file": "media/SEZ-image-e1e4a728.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/0289a903-a2bc-43fa-93cf-b6b234033310.png",
-        "requestId": "e1e4a728-15fc-404d-b265-d0096656b3b6",
-        "prompt": "Cinematic aerial establishing shot of Seychelles, Seychelles: granite boulders on white-sand beaches. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:54:11.198Z"
+        "file": "media/SEZ-image-e1e4a728.jpg"
       }
     },
     "DXB": {
       "image": {
-        "file": "media/DXB-image-fdf57e1f.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/0621c616-51bd-47b4-8bb7-8dec6836c6a6.png",
-        "requestId": "fdf57e1f-c8b3-42e8-b9d4-4512b7a57279",
-        "prompt": "Cinematic aerial establishing shot of Dubai, UAE: Burj Khalifa piercing a futuristic desert skyline. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:54:45.897Z"
+        "file": "media/DXB-image-fdf57e1f.jpg"
       }
     },
     "MRU": {
       "image": {
-        "file": "media/MRU-image-42620d94.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/ae866a0c-d9ea-454d-bfc8-8f7f309ddab0.png",
-        "requestId": "42620d94-8f8c-4784-a842-62f883d08f03",
-        "prompt": "Cinematic aerial establishing shot of Mauritius, Mauritius: Le Morne peninsula and lagoon reefs. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:55:20.200Z"
+        "file": "media/MRU-image-42620d94.jpg"
       }
     },
     "BOM": {
       "image": {
-        "file": "media/BOM-image-d71f6f06.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/6620673d-1fa5-45a9-a08c-8f000ed2f2b2.png",
-        "requestId": "d71f6f06-4693-4629-b1c9-f9bfd1da00c1",
-        "prompt": "Cinematic aerial establishing shot of Mumbai, India: Marine Drive curve and Gateway of India. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:57:26.052Z"
+        "file": "media/BOM-image-d71f6f06.jpg"
       }
     },
     "CMB": {
       "image": {
-        "file": "media/CMB-image-e2bcb913.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/6d5db409-2f73-4642-8bcc-db59dec72cb9.png",
-        "requestId": "e2bcb913-ef4a-40ad-9e52-b9129d2097ad",
-        "prompt": "Cinematic aerial establishing shot of Colombo, Sri Lanka: tropical coastline and Lotus Tower. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:58:56.320Z"
+        "file": "media/CMB-image-e2bcb913.jpg"
       }
     },
     "KTM": {
       "image": {
-        "file": "media/KTM-image-6f88fa1d.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/0b450989-d89f-4c2d-bc56-a1c8dd9f9ece.png",
-        "requestId": "6f88fa1d-959e-4225-a6c5-fe22dcf13dcc",
-        "prompt": "Cinematic aerial establishing shot of Kathmandu, Nepal: Boudhanath stupa with the Himalaya behind. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T12:59:28.986Z"
+        "file": "media/KTM-image-6f88fa1d.jpg"
       }
     },
     "ZNZ": {
       "image": {
-        "file": "media/ZNZ-image-50480266.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/c4a2be74-09d5-40a4-ad4a-458821bf7e69.png",
-        "requestId": "50480266-03d2-4e05-8121-5aac6274dee2",
-        "prompt": "Cinematic aerial establishing shot of Zanzibar, Tanzania: dhow sails on turquoise water, Stone Town. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:14:46.668Z"
+        "file": "media/ZNZ-image-50480266.jpg"
       }
     },
     "DEL": {
       "image": {
-        "file": "media/DEL-image-30fdfdaa.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/4b0a3ed4-94b4-42ba-8e06-8a05cd36632a.png",
-        "requestId": "30fdfdaa-0f19-4c99-96fd-be9f2f1fc5be",
-        "prompt": "Cinematic aerial establishing shot of Delhi, India: India Gate and Mughal domes in golden haze. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:14:46.904Z"
+        "file": "media/DEL-image-30fdfdaa.jpg"
       }
     },
     "ALA": {
       "image": {
-        "file": "media/ALA-image-9189d36a.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/a64a6d7a-c3b2-427f-bdda-3fb3a9499280.png",
-        "requestId": "9189d36a-24ce-4e37-9c7a-47760c1b06e3",
-        "prompt": "Cinematic aerial establishing shot of Almaty, Kazakhstan: Tian Shan snow peaks above the city. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:14:47.028Z"
+        "file": "media/ALA-image-9189d36a.jpg"
       }
     },
     "OPO": {
       "image": {
-        "file": "media/OPO-image-7b582bef.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/fd45fd58-2305-4424-88c5-78d911cb911c.png",
-        "requestId": "7b582bef-7efb-4b92-9b65-566df68479cf",
-        "prompt": "Cinematic aerial establishing shot of Porto, Portugal: Ribeira riverfront, Dom Luís I iron bridge over the Douro. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:14:47.132Z"
+        "file": "media/OPO-image-7b582bef.jpg"
       }
     },
     "LON": {
       "image": {
-        "file": "media/LON-image-fe3d5e39.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/629ae1f9-8577-44e6-8803-fc42badc70f4.png",
-        "requestId": "fe3d5e39-c576-4bde-b409-57113fe10e21",
-        "prompt": "Cinematic aerial establishing shot of London, United Kingdom: the Thames, Tower Bridge and the City skyline. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:22:02.500Z"
+        "file": "media/LON-image-fe3d5e39.jpg"
       }
     },
     "TFS": {
       "image": {
-        "file": "media/TFS-image-9dacaeb4.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/604ad1f4-7126-47f0-b685-2f7ad7cb081b.png",
-        "requestId": "9dacaeb4-3d9c-4375-a714-9d22330fb442",
-        "prompt": "Cinematic aerial establishing shot of Tenerife, Spain: Mount Teide volcano above a sea of clouds. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:22:18.778Z"
+        "file": "media/TFS-image-9dacaeb4.jpg"
       }
     },
     "KUL": {
       "image": {
-        "file": "media/KUL-image-71d64948.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9b134a14-94c2-4071-93bb-339fe6e5277c.png",
-        "requestId": "71d64948-1dcc-405a-b6d9-48f24e5075e2",
-        "prompt": "Cinematic aerial establishing shot of Kuala Lumpur, Malaysia: Petronas Twin Towers glowing at dusk. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:22:32.966Z"
+        "file": "media/KUL-image-71d64948.jpg"
       }
     },
     "DPS": {
       "image": {
-        "file": "media/DPS-image-9d8756a5.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/468352ea-24cd-46c3-9fbc-8a611b93e475.png",
-        "requestId": "9d8756a5-f80b-42e2-a4db-c8851a696815",
-        "prompt": "Cinematic aerial establishing shot of Bali, Indonesia: rice terraces and volcanic peaks. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:23:21.770Z"
+        "file": "media/DPS-image-9d8756a5.jpg"
       }
     },
     "SIN": {
       "image": {
-        "file": "media/SIN-image-d5e0872b.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/828e15b1-a7cd-4ac6-aef3-94320650af6f.png",
-        "requestId": "d5e0872b-dca9-4e31-9968-c03275ebca29",
-        "prompt": "Cinematic aerial establishing shot of Singapore, Singapore: Marina Bay Sands and Supertree Grove at night. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:24:28.563Z"
+        "file": "media/SIN-image-d5e0872b.jpg"
       }
     },
     "ULN": {
       "image": {
-        "file": "media/ULN-image-a9a8af96.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/71e68ca9-27b1-42a4-853b-8fa08c64d6d3.png",
-        "requestId": "a9a8af96-5627-4a20-95c4-71b9c05c25df",
-        "prompt": "Cinematic aerial establishing shot of Ulaanbaatar, Mongolia: steppe grasslands and nomad gers. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:25:57.949Z"
+        "file": "media/ULN-image-a9a8af96.jpg"
       }
     },
     "SHA": {
       "image": {
-        "file": "media/SHA-image-11c32339.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/5c46a775-6b73-4f70-b0ed-36d8d81c3a59.png",
-        "requestId": "11c32339-65ed-4279-8be8-b1a3bb7e6ca7",
-        "prompt": "Cinematic aerial establishing shot of Shanghai, China: Pudong skyline across the Bund. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:27:25.028Z"
+        "file": "media/SHA-image-11c32339.jpg"
       }
     },
     "MNL": {
       "image": {
-        "file": "media/MNL-image-9a5049f4.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/150dd941-18c6-42a5-998d-b22a91dd4bed.png",
-        "requestId": "9a5049f4-7f7b-4fa1-b57c-825520cb8b06",
-        "prompt": "Cinematic aerial establishing shot of Manila, Philippines: Manila Bay sunset and El Nido lagoons. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:28:43.889Z"
+        "file": "media/MNL-image-9a5049f4.jpg"
       }
     },
     "SEL": {
       "image": {
-        "file": "media/SEL-image-252ef532.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/6a4dc80e-6e76-4e00-8352-28293d7ddc81.png",
-        "requestId": "252ef532-0c51-4a23-9524-1c2d6b7b9e36",
-        "prompt": "Cinematic aerial establishing shot of Seoul, South Korea: Namsan Tower above a sea of city lights. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:30:59.699Z"
+        "file": "media/SEL-image-252ef532.jpg"
       }
     },
     "PEK": {
       "image": {
-        "file": "media/PEK-image-83b5f820.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/382c6822-e10d-404f-9327-50f83fa5bfca.png",
-        "requestId": "83b5f820-def4-4cef-bd58-7ab230365e11",
-        "prompt": "Cinematic aerial establishing shot of Beijing, China: Forbidden City roofs, the Great Wall beyond. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:32:15.097Z"
+        "file": "media/PEK-image-83b5f820.jpg"
       }
     },
     "UKY": {
       "image": {
-        "file": "media/UKY-image-fefea214.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/efe913d3-71b1-4191-9166-4a6b5dd35a5e.png",
-        "requestId": "fefea214-734e-42b1-b783-5b772c961870",
-        "prompt": "Cinematic aerial establishing shot of Kyoto, Japan: Fushimi Inari torii gates and temple pagodas. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:32:37.252Z"
+        "file": "media/UKY-image-fefea214.jpg"
       }
     },
     "SYD": {
       "image": {
-        "file": "media/SYD-image-0613ff46.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/ee8fddc2-102e-44c5-bb8b-e3d63e2659a8.png",
-        "requestId": "0613ff46-0c8b-490b-b1d6-7f2c933a0dc0",
-        "prompt": "Cinematic aerial establishing shot of Sydney, Australia: Opera House sails and Harbour Bridge. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:33:07.553Z"
+        "file": "media/SYD-image-0613ff46.jpg"
       }
     },
     "TYO": {
       "image": {
-        "file": "media/TYO-image-1e8e90d4.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/0e0bb56e-f0b9-4c9c-87e8-eb2cc43b9997.png",
-        "requestId": "1e8e90d4-cb5b-4b03-8bfc-d7aa0624696d",
-        "prompt": "Cinematic aerial establishing shot of Tokyo, Japan: neon-lit Shinjuku skyline, Mount Fuji on the horizon. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:35:26.138Z"
+        "file": "media/TYO-image-1e8e90d4.jpg"
       }
     },
     "CNS": {
       "image": {
-        "file": "media/CNS-image-1fdc4b00.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9c5c77fe-d093-40b6-9fff-2f40d062a8c4.png",
-        "requestId": "1fdc4b00-63c2-4fc5-b1e0-bb35ddd244a3",
-        "prompt": "Cinematic aerial establishing shot of Cairns, Australia: Great Barrier Reef from the air. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:36:37.086Z"
+        "file": "media/CNS-image-1fdc4b00.jpg"
       }
     },
     "HKG": {
       "image": {
-        "file": "media/HKG-image-aac6ecb2.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/71036656-6f65-4bc8-965b-4641afac0caf.png",
-        "requestId": "aac6ecb2-5803-420f-bbf3-c5d2698dbdfc",
-        "prompt": "Cinematic aerial establishing shot of Hong Kong, Hong Kong: Victoria Harbour skyline with neon reflections. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:40:54.390Z"
+        "file": "media/HKG-image-aac6ecb2.jpg"
       }
     },
     "ZQN": {
       "image": {
-        "file": "media/ZQN-image-486ecd41.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/3d6316a7-6107-4a14-9593-703b1f81d398.png",
-        "requestId": "486ecd41-816a-4415-917d-edf34dd69b21",
-        "prompt": "Cinematic aerial establishing shot of Queenstown, New Zealand: the Remarkables range above Lake Wakatipu, Milford Sound fjords. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:41:57.130Z"
+        "file": "media/ZQN-image-486ecd41.jpg"
       }
     },
     "AKL": {
       "image": {
-        "file": "media/AKL-image-5a965bf4.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/e083406a-9f76-4e87-a988-609acee4bc25.png",
-        "requestId": "5a965bf4-1727-4fdb-8634-3bf536aad59c",
-        "prompt": "Cinematic aerial establishing shot of Auckland, New Zealand: Sky Tower and volcanic harbour islands. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:43:37.140Z"
+        "file": "media/AKL-image-5a965bf4.jpg"
       }
     },
     "PPT": {
       "image": {
-        "file": "media/PPT-image-d7050362.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/2e1842d9-570f-443b-8818-9b0b8811b4fd.png",
-        "requestId": "d7050362-28d2-4653-bb6c-f70843bb872b",
-        "prompt": "Cinematic aerial establishing shot of Tahiti, French Polynesia: Bora Bora lagoon and Mount Otemanu. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:44:04.847Z"
+        "file": "media/PPT-image-d7050362.jpg"
       }
     },
     "HNL": {
       "image": {
-        "file": "media/HNL-image-c55052fb.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/2c8cb4c2-0436-4d24-a648-883b6ae9e805.png",
-        "requestId": "c55052fb-e458-4f06-9601-852b3b5eb44c",
-        "prompt": "Cinematic aerial establishing shot of Honolulu, USA: Diamond Head crater above Waikiki. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:45:12.387Z"
+        "file": "media/HNL-image-c55052fb.jpg"
       }
     },
     "ANC": {
       "image": {
-        "file": "media/ANC-image-38a87691.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/c7177882-2c85-4c7c-b944-83a0d18d34d8.png",
-        "requestId": "38a87691-3952-4557-bc78-8f9bd358a03b",
-        "prompt": "Cinematic aerial establishing shot of Anchorage, USA: Chugach mountains and glaciers. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:51:30.941Z"
+        "file": "media/ANC-image-38a87691.jpg"
       }
     },
     "REP": {
       "image": {
-        "file": "media/REP-image-5270304a.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/eea9df1f-823c-478d-8a13-bb906e50a860.png",
-        "requestId": "5270304a-23cd-4f27-bdc8-2a14726c72c0",
-        "prompt": "Cinematic aerial establishing shot of Siem Reap, Cambodia: Angkor Wat towers reflected in the moat. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:53:17.992Z"
+        "file": "media/REP-image-5270304a.jpg"
       }
     },
     "YVR": {
       "image": {
-        "file": "media/YVR-image-8cd44f3c.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/aecde6f2-e2ab-48c5-bdff-5f6966cc6e60.png",
-        "requestId": "8cd44f3c-54d4-4b15-9c49-15915895b151",
-        "prompt": "Cinematic aerial establishing shot of Vancouver, Canada: glass towers between ocean and North Shore mountains. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:53:58.096Z"
+        "file": "media/YVR-image-8cd44f3c.jpg"
       }
     },
     "SFO": {
       "image": {
-        "file": "media/SFO-image-c773e080.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/28dc7227-f6a6-485e-aab3-8a493123d537.png",
-        "requestId": "c773e080-7e12-4c2f-9c7b-ab49de1cb33b",
-        "prompt": "Cinematic aerial establishing shot of San Francisco, USA: Golden Gate Bridge emerging from fog. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:56:22.516Z"
+        "file": "media/SFO-image-c773e080.jpg"
       }
     },
     "LAS": {
       "image": {
-        "file": "media/LAS-image-2c8d2c6a.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/6f49595d-6e64-4567-8562-0add77d8cd13.png",
-        "requestId": "2c8d2c6a-801d-4f12-a8e4-867f9ed0fe3f",
-        "prompt": "Cinematic aerial establishing shot of Las Vegas, USA: the Strip blazing with light in the Mojave desert. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:56:52.837Z"
+        "file": "media/LAS-image-2c8d2c6a.jpg"
       }
     },
     "MEL": {
       "image": {
-        "file": "media/MEL-image-7b467e26.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/3475055d-8426-4017-bc46-934b3d6c75e7.png",
-        "requestId": "7b467e26-f407-4fcc-8ca4-138f176a27c7",
-        "prompt": "Cinematic aerial establishing shot of Melbourne, Australia: Yarra river skyline and laneways. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:57:11.899Z"
+        "file": "media/MEL-image-7b467e26.jpg"
       }
     },
     "LAX": {
       "image": {
-        "file": "media/LAX-image-4b979250.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9d81698c-84eb-43cf-9059-d14dd02c3ecf.png",
-        "requestId": "4b979250-2ba3-40df-9030-035720c6b195",
-        "prompt": "Cinematic aerial establishing shot of Los Angeles, USA: endless city grid, Hollywood hills, Pacific sunset. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:57:19.100Z"
+        "file": "media/LAX-image-4b979250.jpg"
       }
     },
     "EDI": {
       "image": {
-        "file": "media/EDI-image-32428e14.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/0325a42b-80b6-408e-b3e1-b04846a94f92.png",
-        "requestId": "32428e14-4016-457c-988c-0f2e6e9f6670",
-        "prompt": "Cinematic aerial establishing shot of Edinburgh, United Kingdom: Edinburgh Castle on its volcanic crag, Old Town spires. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:58:01.107Z"
+        "file": "media/EDI-image-32428e14.jpg"
       }
     },
     "YTO": {
       "image": {
-        "file": "media/YTO-image-6083d7dd.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/4f3538e8-0982-426a-a821-d66219b62111.png",
-        "requestId": "6083d7dd-16c2-4129-ba17-3120392b7d11",
-        "prompt": "Cinematic aerial establishing shot of Toronto, Canada: CN Tower on the Lake Ontario shore. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T13:59:26.773Z"
+        "file": "media/YTO-image-6083d7dd.jpg"
       }
     },
     "YUL": {
       "image": {
-        "file": "media/YUL-image-3a913243.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/c9286955-4a9b-4460-87d9-e7860cd6c0af.png",
-        "requestId": "3a913243-93a7-4a91-b70c-528acf482958",
-        "prompt": "Cinematic aerial establishing shot of Montréal, Canada: Old Port and Mount Royal. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:01:46.255Z"
+        "file": "media/YUL-image-3a913243.jpg"
       }
     },
     "NYC": {
       "image": {
-        "file": "media/NYC-image-e49da1d6.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/80fcba6e-c5db-4840-a0e8-754092c03212.png",
-        "requestId": "e49da1d6-5aaf-4ecc-a1af-a4d503186dc5",
-        "prompt": "Cinematic aerial establishing shot of New York, USA: Manhattan skyline, Empire State Building. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:03:36.277Z"
+        "file": "media/NYC-image-e49da1d6.jpg"
       }
     },
     "MIA": {
       "image": {
-        "file": "media/MIA-image-08a050d5.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/b175a60e-aec4-401c-b75d-9fb9226ba129.png",
-        "requestId": "08a050d5-de6f-4325-9181-49ad2d4da56f",
-        "prompt": "Cinematic aerial establishing shot of Miami, USA: art deco South Beach and turquoise bay. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:08:54.692Z"
+        "file": "media/MIA-image-08a050d5.jpg"
       }
     },
     "DEN": {
       "image": {
-        "file": "media/DEN-image-cf592a39.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/60095d04-5297-4c81-a0f0-08d054823339.png",
-        "requestId": "cf592a39-8bf4-4bb7-80b5-e6ba11e1783d",
-        "prompt": "Cinematic aerial establishing shot of Denver, USA: Rocky Mountains front range above the city. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:11:19.339Z"
+        "file": "media/DEN-image-cf592a39.jpg"
       }
     },
     "CHI": {
       "image": {
-        "file": "media/CHI-image-8b387d87.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/60042adc-62a7-405a-be6f-99cc1f350a2d.png",
-        "requestId": "8b387d87-cc36-4816-95ad-f74708d29212",
-        "prompt": "Cinematic aerial establishing shot of Chicago, USA: lakefront skyscrapers on Lake Michigan. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:13:48.348Z"
+        "file": "media/CHI-image-8b387d87.jpg"
       }
     },
     "HAV": {
       "image": {
-        "file": "media/HAV-image-d8317eda.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/a75cc25a-43d3-4a9e-9d9e-9d5515ef2c9b.png",
-        "requestId": "d8317eda-8c0a-48f6-b925-5709cedda496",
-        "prompt": "Cinematic aerial establishing shot of Havana, Cuba: the Malecón seawall and pastel colonial facades. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:14:40.292Z"
+        "file": "media/HAV-image-d8317eda.jpg"
       }
     },
     "LIM": {
       "image": {
-        "file": "media/LIM-image-a93eda03.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/b666efd8-4396-4df6-8003-d04ccbb1a790.png",
-        "requestId": "a93eda03-0385-44c5-9c06-de032d59accb",
-        "prompt": "Cinematic aerial establishing shot of Lima, Peru: Miraflores cliffs over the Pacific. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:17:33.921Z"
+        "file": "media/LIM-image-a93eda03.jpg"
       }
     },
     "HAN": {
       "image": {
-        "file": "media/HAN-image-ce7dff15.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9e1b9181-8fe1-4ad0-a9f5-d07e266ee402.png",
-        "requestId": "ce7dff15-cde8-47f6-ae05-4009fe96b0c1",
-        "prompt": "Cinematic aerial establishing shot of Hanoi, Vietnam: Ha Long Bay limestone karsts in mist. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:17:54.640Z"
+        "file": "media/HAN-image-ce7dff15.jpg"
       }
     },
     "BOG": {
       "image": {
-        "file": "media/BOG-image-f460616e.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/db5c47d1-86c2-427b-af95-401610994175.png",
-        "requestId": "f460616e-ea11-4c58-b49f-4a213f831fc1",
-        "prompt": "Cinematic aerial establishing shot of Bogotá, Colombia: Andean plateau city beneath Monserrate. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:18:41.340Z"
+        "file": "media/BOG-image-f460616e.jpg"
       }
     },
     "CUZ": {
       "image": {
-        "file": "media/CUZ-image-8266a585.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/49343419-5e75-469c-87a1-a70ebc23b2c3.png",
-        "requestId": "8266a585-5b0a-4f1f-96f6-009d6e4653c9",
-        "prompt": "Cinematic aerial establishing shot of Cusco, Peru: Machu Picchu terraces under Andean peaks. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:21:56.358Z"
+        "file": "media/CUZ-image-8266a585.jpg"
       }
     },
     "USH": {
       "image": {
-        "file": "media/USH-image-a1dfde65.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/fa1cef47-ec59-4d64-bc18-1d12f69040e7.png",
-        "requestId": "a1dfde65-72cc-4d17-9c49-c647ca8f1a18",
-        "prompt": "Cinematic aerial establishing shot of Ushuaia, Argentina: Beagle Channel at the end of the world. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:24:52.451Z"
+        "file": "media/USH-image-a1dfde65.jpg"
       }
     },
     "CTG": {
       "image": {
-        "file": "media/CTG-image-c2bf132f.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/86d44bd1-8d44-4709-a653-de663c3fa662.png",
-        "requestId": "c2bf132f-5369-46d1-9f6d-12ebeff07cb7",
-        "prompt": "Cinematic aerial establishing shot of Cartagena, Colombia: walled colonial city on the Caribbean. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:27:28.898Z"
+        "file": "media/CTG-image-c2bf132f.jpg"
       }
     },
     "LOF": {
       "image": {
-        "file": "media/LOF-image-ca7432d6.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/e9b6c3c8-f892-4789-82f8-a5bf47c63944.png",
-        "requestId": "ca7432d6-3ea5-44c8-ac8b-292fed7f618b",
-        "prompt": "Cinematic aerial establishing shot of Lofoten, Norway: red fishing cabins beneath jagged Arctic peaks. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:28:07.281Z"
+        "file": "media/LOF-image-ca7432d6.jpg"
       }
     },
     "BUD": {
       "image": {
-        "file": "media/BUD-image-1108ace2.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/a8bfb044-3195-412f-8072-2ee09131288a.png",
-        "requestId": "1108ace2-8ed4-41a0-9f4e-e9a029becbae",
-        "prompt": "Cinematic aerial establishing shot of Budapest, Hungary: the Parliament on the Danube and the Chain Bridge at dusk. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:28:37.626Z"
+        "file": "media/BUD-image-1108ace2.jpg"
       }
     },
     "BUE": {
       "image": {
-        "file": "media/BUE-image-680fe6c5.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/38ac0151-1aaa-4522-b58f-bd2f45964e16.png",
-        "requestId": "680fe6c5-3e02-440e-b1e5-82a406359a60",
-        "prompt": "Cinematic aerial establishing shot of Buenos Aires, Argentina: Obelisco and wide avenues. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:30:03.115Z"
+        "file": "media/BUE-image-680fe6c5.jpg"
       }
     },
     "SAO": {
       "image": {
-        "file": "media/SAO-image-c1d27376.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/5de28767-3fdd-4fef-9595-1d64a23e61ce.png",
-        "requestId": "c1d27376-f1f6-4759-9dd8-70d718b43983",
-        "prompt": "Cinematic aerial establishing shot of São Paulo, Brazil: endless skyscraper canopy under stormy skies. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:31:28.177Z"
+        "file": "media/SAO-image-c1d27376.jpg"
       }
     },
     "FLR": {
       "image": {
-        "file": "media/FLR-image-a006bde7.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/a8dbfadf-399d-4f53-90d1-7bb20ee63fdd.png",
-        "requestId": "a006bde7-6658-43d8-9104-d1daa8c51547",
-        "prompt": "Cinematic aerial establishing shot of Florence, Italy: the Duomo dome over terracotta rooftops and the Arno. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:33:44.008Z"
+        "file": "media/FLR-image-a006bde7.jpg"
       }
     },
     "CUN": {
       "image": {
-        "file": "media/CUN-image-ea4c04a7.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/0561c581-3cc1-4ed0-bfda-9ea81d6f639c.png",
-        "requestId": "ea4c04a7-e125-41ed-82be-72a3c505e108",
-        "prompt": "Cinematic aerial establishing shot of Cancún, Mexico: Caribbean reefs and Mayan ruins of Tulum. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:36:02.939Z"
+        "file": "media/CUN-image-ea4c04a7.jpg"
       }
     },
     "DBV": {
       "image": {
-        "file": "media/DBV-image-7027637d.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9632e03d-f053-4e6a-8d76-6b27b43a5ab2.png",
-        "requestId": "7027637d-5bd1-40eb-87a0-aa472884faa0",
-        "prompt": "Cinematic aerial establishing shot of Dubrovnik, Croatia: walled old town with terracotta roofs on the Adriatic. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:36:47.045Z"
+        "file": "media/DBV-image-7027637d.jpg"
       }
     },
     "MLA": {
       "image": {
-        "file": "media/MLA-image-1c2247c8.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/14f9001b-62ce-4723-b72e-58323f866319.png",
-        "requestId": "1c2247c8-78a5-4560-8954-6587a170cb6b",
-        "prompt": "Cinematic aerial establishing shot of Valletta, Malta: honey-coloured fortress city over the Grand Harbour. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:39:59.775Z"
+        "file": "media/MLA-image-1c2247c8.jpg"
       }
     },
     "NCE": {
       "image": {
-        "file": "media/NCE-image-aff9ae95.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/6cbfc722-40fe-4b0e-83a0-681d25e33f6b.png",
-        "requestId": "aff9ae95-c53b-4216-8c9c-779d176e2f0e",
-        "prompt": "Cinematic aerial establishing shot of Nice, France: the Promenade des Anglais curving around the azure bay. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:41:58.027Z"
+        "file": "media/NCE-image-aff9ae95.jpg"
       }
     },
     "FAO": {
       "image": {
-        "file": "media/FAO-image-3f0c05df.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/e17e6683-870d-47ed-98d6-9f7503a0249d.png",
-        "requestId": "3f0c05df-db27-4443-adc8-33866c238f64",
-        "prompt": "Cinematic aerial establishing shot of Algarve, Portugal: golden sea cliffs and grottoes of Ponta da Piedade. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:42:07.595Z"
+        "file": "media/FAO-image-3f0c05df.jpg"
       }
     },
     "JRO": {
       "image": {
-        "file": "media/JRO-image-4a4130a1.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/5e8d2ff4-426f-459d-a04f-d693c4437651.png",
-        "requestId": "4a4130a1-40e1-4589-993d-359abe0d285e",
-        "prompt": "Cinematic aerial establishing shot of Kilimanjaro, Tanzania: snowcapped Kilimanjaro above the savannah. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:42:20.116Z"
+        "file": "media/JRO-image-4a4130a1.jpg"
       }
     },
     "VFA": {
       "image": {
-        "file": "media/VFA-image-2f7c8019.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/2374af7c-4ad0-43a6-b9bd-ddc00dec0f86.png",
-        "requestId": "2f7c8019-c4ef-4f5f-8761-89f687862828",
-        "prompt": "Cinematic aerial establishing shot of Victoria Falls, Zimbabwe: a thundering curtain of water wrapped in rainbow mist. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:42:54.110Z"
+        "file": "media/VFA-image-2f7c8019.jpg"
       }
     },
     "SCL": {
       "image": {
-        "file": "media/SCL-image-b3ed6a0a.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/7c75b7d5-11e1-4425-a3c9-6c23a6eddbd8.png",
-        "requestId": "b3ed6a0a-ef73-46ed-a49e-a50ccb993b43",
-        "prompt": "Cinematic aerial establishing shot of Santiago, Chile: city lights below the snow-capped Andes. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:43:05.915Z"
+        "file": "media/SCL-image-b3ed6a0a.jpg"
       }
     },
     "JAI": {
       "image": {
-        "file": "media/JAI-image-a5b4ae92.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/1e20a10f-94d7-4dfd-acd5-89461597a24d.png",
-        "requestId": "a5b4ae92-fa7d-40c7-92d1-93707c8273f4",
-        "prompt": "Cinematic aerial establishing shot of Jaipur, India: pink sandstone palaces and the Hawa Mahal. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:44:08.813Z"
+        "file": "media/JAI-image-a5b4ae92.jpg"
       }
     },
     "GOI": {
       "image": {
-        "file": "media/GOI-image-8ed2795a.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9830f6cb-4217-405b-9012-15042468c4c6.png",
-        "requestId": "8ed2795a-f7cf-4aa7-802b-93842746fb5f",
-        "prompt": "Cinematic aerial establishing shot of Goa, India: palm-fringed beaches and whitewashed Portuguese churches. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:46:39.256Z"
+        "file": "media/GOI-image-8ed2795a.jpg"
       }
     },
     "RIO": {
       "image": {
-        "file": "media/RIO-image-a8f09ab7.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/afdc9c05-ee78-42c5-a253-2355dbc74235.png",
-        "requestId": "a8f09ab7-3c28-45f5-a887-b1c826ff0a69",
-        "prompt": "Cinematic aerial establishing shot of Rio de Janeiro, Brazil: Christ the Redeemer above Sugarloaf and Copacabana. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:50:43.209Z"
+        "file": "media/RIO-image-a8f09ab7.jpg"
       }
     },
     "HKT": {
       "image": {
-        "file": "media/HKT-image-01d1dae0.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9a09ac28-2039-4cb1-bdf9-3ad7a9a67725.png",
-        "requestId": "01d1dae0-caa4-498d-b99f-af22adcceed5",
-        "prompt": "Cinematic aerial establishing shot of Phuket, Thailand: limestone islands rising from the turquoise Andaman Sea. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:50:44.514Z"
+        "file": "media/HKT-image-01d1dae0.jpg"
       }
     },
     "AYQ": {
       "image": {
-        "file": "media/AYQ-image-25457ea1.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/a06eb188-fc8a-4ef3-8499-75c520616e94.png",
-        "requestId": "25457ea1-482e-443d-921c-a69c456304cd",
-        "prompt": "Cinematic aerial establishing shot of Uluru, Australia: the red monolith glowing at sunset in the outback. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:51:39.236Z"
+        "file": "media/AYQ-image-25457ea1.jpg"
       }
     },
     "MEX": {
       "image": {
-        "file": "media/MEX-image-3c6425b4.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/e55f8f3b-5683-44d0-aa66-784c6b555551.png",
-        "requestId": "3c6425b4-6874-4a99-a436-e0cf57dedcdc",
-        "prompt": "Cinematic aerial establishing shot of Mexico City, Mexico: Zócalo cathedral with volcanoes on the horizon. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:52:59.185Z"
+        "file": "media/MEX-image-3c6425b4.jpg"
       }
     },
     "BKK": {
       "image": {
-        "file": "media/BKK-image-adbe7305.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/20d67ebc-47b9-4ec4-996a-03ca51abd56b.png",
-        "requestId": "adbe7305-920b-42af-98b0-9edb37b62416",
-        "prompt": "Cinematic aerial establishing shot of Bangkok, Thailand: Wat Arun temple on the Chao Phraya river. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:53:30.225Z"
+        "file": "media/BKK-image-adbe7305.jpg"
       }
     },
     "YBA": {
       "image": {
-        "file": "media/YBA-image-74c87968.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/581260ae-cb30-4417-8818-78a455f370e3.png",
-        "requestId": "74c87968-b226-4762-9a2b-3518f2bdfdb6",
-        "prompt": "Cinematic aerial establishing shot of Banff, Canada: turquoise glacial lakes beneath the Canadian Rockies. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:56:11.891Z"
+        "file": "media/YBA-image-74c87968.jpg"
       }
     },
     "GCN": {
       "image": {
-        "file": "media/GCN-image-2009ffcf.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/3d4574d8-0f34-4aca-8dc8-0e7e05162624.png",
-        "requestId": "2009ffcf-6cfb-4a67-8514-a8d4c691831f",
-        "prompt": "Cinematic aerial establishing shot of Grand Canyon, USA: layered red canyon walls at sunset. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T14:57:23.589Z"
+        "file": "media/GCN-image-2009ffcf.jpg"
       }
     },
     "MSY": {
       "image": {
-        "file": "media/MSY-image-53eef6ad.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9050bc86-d8fd-4330-beeb-3c9bae30ab3e.png",
-        "requestId": "53eef6ad-21ce-4dbd-88e4-fecf9e81a53a",
-        "prompt": "Cinematic aerial establishing shot of New Orleans, USA: French Quarter balconies and jazz-lit streets. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:01:58.695Z"
+        "file": "media/MSY-image-53eef6ad.jpg"
       }
     },
     "SJO": {
       "image": {
-        "file": "media/SJO-image-67c8d6b3.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/d04dea0a-b7a1-48c4-9171-ea8a2c95100e.png",
-        "requestId": "67c8d6b3-bea3-4160-b30b-2545de77c091",
-        "prompt": "Cinematic aerial establishing shot of Costa Rica, Costa Rica: misty cloud forest and smoking volcanoes. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:03:42.093Z"
+        "file": "media/SJO-image-67c8d6b3.jpg"
       }
     },
     "KRK": {
       "image": {
-        "file": "media/KRK-image-6c8e59ec.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9b016385-9714-41d6-9815-05fcbe8830bd.png",
-        "requestId": "6c8e59ec-11c0-4384-b7e2-1a85d3c89735",
-        "prompt": "Cinematic aerial establishing shot of Kraków, Poland: the Main Market Square and Wawel Castle. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:04:34.618Z"
+        "file": "media/KRK-image-6c8e59ec.jpg"
       }
     },
     "GPS": {
       "image": {
-        "file": "media/GPS-image-6f7abab7.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/aeba5be6-b020-4931-a486-d2c09b3da787.png",
-        "requestId": "6f7abab7-29eb-4ead-b284-78dd8f3c3a1c",
-        "prompt": "Cinematic aerial establishing shot of Galápagos, Ecuador: volcanic islands with sea lions and marine iguanas. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:05:49.843Z"
+        "file": "media/GPS-image-6f7abab7.jpg"
       }
     },
     "FTE": {
       "image": {
-        "file": "media/FTE-image-a09ceb02.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/186714b6-58c2-469c-adf9-df2f52817f6c.png",
-        "requestId": "a09ceb02-774f-45d8-88b3-af4d08919c98",
-        "prompt": "Cinematic aerial establishing shot of Patagonia, Argentina: the Perito Moreno glacier and granite spires of Fitz Roy. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:10:53.934Z"
+        "file": "media/FTE-image-a09ceb02.jpg"
       }
     },
     "IPC": {
       "image": {
-        "file": "media/IPC-image-93648db0.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/ac9f17bf-a777-461f-a850-a27bb165321f.png",
-        "requestId": "93648db0-d791-4c87-bd0c-bb67a04eeb9f",
-        "prompt": "Cinematic aerial establishing shot of Easter Island, Chile: moai statues on grassy volcanic slopes. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:11:28.679Z"
+        "file": "media/IPC-image-93648db0.jpg"
       }
     },
     "WDH": {
       "image": {
-        "file": "media/WDH-image-770c7acf.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/6f22c326-6c33-4f0e-a008-450c934a1c20.png",
-        "requestId": "770c7acf-0a18-4c72-9235-b5b9b2ce116f",
-        "prompt": "Cinematic aerial establishing shot of Namib Desert, Namibia: towering red dunes of Sossusvlei and dead camel-thorn trees. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:16:07.064Z"
+        "file": "media/WDH-image-770c7acf.jpg"
       }
     },
     "PTY": {
       "image": {
-        "file": "media/PTY-image-4fe5e2bd.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/f000c5c4-cfbd-421c-8901-4f30ed0ac635.png",
-        "requestId": "4fe5e2bd-88cc-4ab7-8c13-6c2d358957d9",
-        "prompt": "Cinematic aerial establishing shot of Panama City, Panama: a glass skyline along the Pacific bay. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:16:17.692Z"
+        "file": "media/PTY-image-4fe5e2bd.jpg"
       }
     },
     "TPE": {
       "image": {
-        "file": "media/TPE-image-2dac8815.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/a9d5aaec-9964-4e12-a2dc-571618d5e111.png",
-        "requestId": "2dac8815-79b9-4d3a-a5fd-bb77a0b40e20",
-        "prompt": "Cinematic aerial establishing shot of Taipei, Taiwan: Taipei 101 above misty mountains. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:20:40.566Z"
+        "file": "media/TPE-image-2dac8815.jpg"
       }
     },
     "SEA": {
       "image": {
-        "file": "media/SEA-image-c2a3a70c.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/603f6260-e259-49df-bd33-7361567efefd.png",
-        "requestId": "c2a3a70c-56f0-4bb0-87c7-e8c3a4d64991",
-        "prompt": "Cinematic aerial establishing shot of Seattle, USA: Space Needle with Mount Rainier behind. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:21:36.463Z"
+        "file": "media/SEA-image-c2a3a70c.jpg"
       }
     },
     "NAN": {
       "image": {
-        "file": "media/NAN-image-e80d2789.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/3a4c2479-a124-4e04-9d5e-3fba2425fc46.png",
-        "requestId": "e80d2789-4d61-457a-b08b-692e78f63ca8",
-        "prompt": "Cinematic aerial establishing shot of Fiji, Fiji: palm islands in a turquoise lagoon. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:24:38.341Z"
+        "file": "media/NAN-image-e80d2789.jpg"
       }
     },
     "OKA": {
       "image": {
-        "file": "media/OKA-image-a588596b.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/3a1985be-4617-4c33-822d-08a08427b4ba.png",
-        "requestId": "a588596b-a9c3-40a4-bffc-f29c189cc4a1",
-        "prompt": "Cinematic aerial establishing shot of Okinawa, Japan: coral reefs and subtropical white-sand beaches. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:30:20.684Z"
+        "file": "media/OKA-image-a588596b.jpg"
       }
     },
     "CTS": {
       "image": {
-        "file": "media/CTS-image-2b6f5cf2.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/fb5e3ed9-1da9-466a-951b-7160be44fe75.png",
-        "requestId": "2b6f5cf2-33b9-46d6-8e85-4969867a94a0",
-        "prompt": "Cinematic aerial establishing shot of Sapporo, Japan: snow festival lanterns and Hokkaido mountains. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:35:56.006Z"
+        "file": "media/CTS-image-2b6f5cf2.jpg"
       }
     },
     "AMF": {
       "image": {
-        "file": "media/AMF-image-d7bf8b4b.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/996dc089-983b-457f-9864-8eb2e759d568.png",
-        "requestId": "d7bf8b4b-7db4-4a59-a243-881fef4f946e",
-        "prompt": "Cinematic aerial establishing shot of Amalfi Coast, Italy: cliffside pastel villages above the Tyrrhenian Sea. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:37:33.158Z"
+        "file": "media/AMF-image-d7bf8b4b.jpg"
       }
     },
     "MLE": {
       "image": {
-        "file": "media/MLE-image-028e163b.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/9d781b2d-9fe8-4f5c-80a9-cd68796f2caf.png",
-        "requestId": "028e163b-c61f-4861-957b-9369ed7d1034",
-        "prompt": "Cinematic aerial establishing shot of Malé, Maldives: overwater villas above a turquoise atoll. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:37:53.537Z"
+        "file": "media/MLE-image-028e163b.jpg"
       }
     },
     "MAD": {
       "image": {
-        "file": "media/MAD-image-3c5fbe1a.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/2f3d9727-6f07-4c35-85b8-e51af954373d.png",
-        "requestId": "3c5fbe1a-c45a-451d-9d38-313a662678bd",
-        "prompt": "Cinematic aerial establishing shot of Madrid, Spain: Gran Vía domes and Plaza Mayor. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:41:11.833Z"
+        "file": "media/MAD-image-3c5fbe1a.jpg"
       }
     },
     "BCN": {
       "image": {
-        "file": "media/BCN-image-491a25de.jpg",
-        "remoteUrl": "https://d3u0tzju9qaucj.cloudfront.net/b937eba8-d717-4400-899b-ba9a64e3bc7a/26cdc440-58db-4ff9-8e85-00c5423d7b76.png",
-        "requestId": "491a25de-6be4-43e0-8f22-d5a210950f6c",
-        "prompt": "Cinematic aerial establishing shot of Barcelona, Spain: Sagrada Família spires and the Eixample grid. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.",
-        "createdAt": "2026-09-29T15:52:04.299Z"
+        "file": "media/BCN-image-491a25de.jpg"
       }
     }
-  },
-  "jobs": {}
+  }
 }
