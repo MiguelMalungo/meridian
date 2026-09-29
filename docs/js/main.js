@@ -1056,7 +1056,7 @@ function errText(err) {
   const msg = err?.message || String(err);
   if (err?.status === 503 && /not configured/i.test(msg)) return 'Higgsfield is not connected. Add HF_CREDENTIALS to .env and restart.';
   if (err?.status === 401 || /invalid credentials/i.test(msg)) return 'Higgsfield rejected the key (401). Check HF_CREDENTIALS in .env.';
-  if (err?.status === 402 || /insufficient|balance/i.test(msg)) return 'Not enough Higgsfield balance. Top up at console.higgsfield.ai.';
+  if (err?.status === 402 || /insufficient|balance|not_enough_credits/i.test(msg)) return 'Your Higgsfield API balance is empty. Top up at console.higgsfield.ai (a saved card alone adds no credits). Nothing was charged.';
   if (/concurrent/i.test(msg)) return 'Too many renders at once. Try again in a moment.';
   return msg;
 }

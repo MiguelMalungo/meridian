@@ -25,8 +25,14 @@ Then open http://localhost:4317. You need Node 18 or newer, and there is
 nothing to install. Trips are saved to `data/state.json`, and the Higgsfield
 proxy is enabled.
 
-To put your renders on the live site, commit `docs/media/` (images and
-`index.json`) and push.
+To render stills for every destination in one go (with the server running):
+
+```bash
+node scripts/render-stills.mjs
+```
+
+Then commit `docs/media/` (the images and `index.json`) and push to put them
+on the live site.
 
 ## Higgsfield (optional)
 
