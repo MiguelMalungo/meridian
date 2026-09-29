@@ -112,47 +112,39 @@ async function boot() {
     return;
   }
 
-  const geoP = globe.init();
-  const stateP = S.loadState();
-  const hfP = S.hfStatus();
-  const reconP = S.loadRecon();
+  const geoP = globe.init().catch((err) => console.error('[meridian] geodata failed', err));
   progress(20);
 
-  try {
-    const st = await stateP;
+  // No local server (e.g. GitHub Pages): switch to static mode.
+  const st = await S.loadState().catch(() => null);
+  if (st) {
     state.trips = st.trips || [];
     state.home = st.home && CITY[st.home] ? st.home : guessHome();
     if (!st.home) persist();
-  } catch {
+  } else {
     state.static = true;
     const saved = loadLocalState();
     state.trips = Array.isArray(saved?.trips) ? saved.trips : demoTrips();
     state.home = saved?.home && CITY[saved.home] ? saved.home : guessHome();
   }
   progress(40);
-  try {
-    const hf = await hfP;
-    state.hf = { configured: hf.configured, reachable: true };
-  } catch { /* server offline */ }
-  try {
-    const idx = await reconP;
-    state.recon = idx.recon || {};
-    for (const [id, j] of Object.entries(idx.jobs || {})) {
+
+  if (!state.static) {
+    const [hf, idx] = await Promise.all([S.hfStatus().catch(() => null), S.loadRecon().catch(() => null)]);
+    if (hf) state.hf = { configured: hf.configured, reachable: true };
+    state.recon = idx?.recon || {};
+    for (const [id, j] of Object.entries(idx?.jobs || {})) {
       state.jobs[id] = { cityId: j.cityId, kind: j.kind, status: 'queued', startedAt: Date.parse(j.createdAt) || Date.now() };
     }
-  } catch {
-    // Static site: show any renders that were committed alongside it.
+  } else {
+    // Show any renders that were committed alongside the static site.
     try {
       const res = await fetch('media/index.json', { cache: 'no-cache' });
       if (res.ok) state.recon = (await res.json()).recon || {};
     } catch { /* none published */ }
   }
   progress(60);
-  try {
-    await geoP;
-  } catch (err) {
-    console.error(err);
-  }
+  await geoP;
   progress(100);
 
   buildStaticUi();
