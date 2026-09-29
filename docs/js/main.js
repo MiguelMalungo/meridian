@@ -391,7 +391,9 @@ function renderFoot() {
     return;
   }
   if (!state.hf.configured) {
-    $('#foot-note').textContent = 'Photos courtesy of Wikipedia';
+    $('#foot-note').textContent = renders
+      ? `${renders} stills rendered with Higgsfield · photos via Wikipedia`
+      : 'Photos courtesy of Wikipedia';
     batchBtn.hidden = true;
     return;
   }

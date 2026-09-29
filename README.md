@@ -31,8 +31,14 @@ To render stills for every destination in one go (with the server running):
 node scripts/render-stills.mjs
 ```
 
-Then commit `docs/media/` (the images and `index.json`) and push to put them
-on the live site.
+Then shrink them to web-sized JPEGs (macOS `sips`; about 4 MB → 250 KB each),
+commit `docs/media/` (the images and `index.json`) and push to put them on
+the live site:
+
+```bash
+node scripts/optimize-media.mjs
+git add docs/media && git commit -m "Add renders" && git push
+```
 
 ## Higgsfield (optional)
 

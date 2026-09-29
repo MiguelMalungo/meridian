@@ -1,12 +1,12 @@
 // Batch-render Higgsfield stills through the local Meridian server
 // (start it first with `node server.mjs`; the API key never leaves it).
-// Usage: node scripts/render-stills.mjs [CODE,CODE,...]
+// Usage: [CONCURRENCY=3] node scripts/render-stills.mjs [CODE,CODE,...]
 //        no args = every destination that doesn't have a still yet
 import { CITIES } from '../docs/js/cities.js';
 
 const BASE = 'http://localhost:4317';
 const MAX_USD_PER_STILL = 0.01;
-const CONCURRENCY = 3;
+const CONCURRENCY = Math.max(1, Number(process.env.CONCURRENCY) || 3);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const prompt = (c) => `Cinematic aerial establishing shot of ${c.name}, ${c.country}${c.hint ? `: ${c.hint}` : ''}. Blue-hour light with warm city lights, volumetric atmosphere, crisp detail, sweeping wide-angle composition, travel documentary photography, subtle 35mm film grain, no text.`;
@@ -47,7 +47,7 @@ async function renderOne(c) {
       job = await call('POST', '/api/hf/generate', { kind: 'image', cityId: c.code, input: input(c) });
       break;
     } catch (err) {
-      if (/concurrent/i.test(err.message) && attempt < 20) { await sleep(5000); continue; }
+      if (/concurrent/i.test(err.message) && attempt < 240) { await sleep(5000); continue; }
       if (/not_enough_credits|insufficient|balance/i.test(err.message)) halt = 'Higgsfield API balance is empty. Top up at console.higgsfield.ai.';
       return { code: c.code, status: 'error', error: err.message };
     }
